@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  body {font-size: 3rem;}
+  h1{
+      background: #555;
+  }
+</style>
+</head>
+<body>
+<h1>Java Script</h1>
+
+    <script>
+    
+    // var a = -100;
+
+    // function sample() {
+    //     if (a > 0) {
+    //     return;
+    //     }
+    //     console.log('zzzz');
+    // }
+    
+    // sample();
+
+
+    // function 인사(이름) {
+    //     console.log('안녕? 나는' + 이름 + '야.');
+    // }
+    
+    // 인사 ('최승규');
+
+
+    // // a 와 b는 더하기 함수의 매개변수
+    // function 더하기(a, b) {
+    //     document.write(a + b);
+    // }
+
+    
+
+    // function 더하기2(a, b){
+    //     document.write(a + b);
+    //     return a + b; // 리턴값
+    // }
+    
+    // // console.log ( 더하기2(100, 200) );
+
+    
+    // var h = 더하기2(200, 500);
+    // console.log(h);
+
+
+    // // 변수의 유효범위
+    // var a = 100; // 전역변수
+
+    // function sample1() {
+         
+    //     var b = 200; // 지역변수
+    //     console.log('sample에서 출력한' + a + b);
+
+    //     function sample2(){
+    //         console.log(b);
+    //     }
+    //     sample2();
+    // }
+    // sample1();
+    // // console.log(b); 지역변수라 안됨
+
+    // let jejudo = {
+    //     a: 100,
+    //     b: 200,
+    //     c: 300,
+    // }
+    // console.log(jejudo.a);
+    
+    //객체
+    var person = {};
+    person.name = '승규'; //속성(property)
+    person.age = 12;
+    person.introduce = function () {
+        console.log('안녕? 나는' + name + '야. 나이는'+ age + '살이야.');
+    } // 메서드(method)
+
+    var person2 = {
+        name: '필규',
+        age: 20,
+        introduce: function () {
+        console.log('안녕? 나는 필규야. 나이는 12살이야.');
+        }
+    };
+
+    person.introduce();
+    person2.introduce();
+
+    </script>
+</body>
+</html>

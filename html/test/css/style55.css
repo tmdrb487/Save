@@ -1,0 +1,49 @@
+/* reest */
+* { margin: 0;padding: 0;}
+img {width: 100%}
+li {list-style: none}
+a {text-decoration: none ; color: #666}
+
+#wrap { width: 100%;}
+.container { width: 1200px; margin: 0 auto;}
+
+
+.header { }
+.banner { }
+.content1 {}
+.content2 {; }
+.footer {height: 150px;background: #666; }
+
+/* header */
+
+.header {overflow: hidden;}
+.header h1 {float: left; }
+.header h1 img {width: 150px; }
+.header nav {float: right; }
+.header nav ul {margin: 15px; }
+.header nav li {display: inline; }
+.header nav li  a:hover {color: #888; }
+
+
+
+/* content1 */
+.content1 { overflow: hidden;}
+.content1 .notice {width: 49%;margin-right: 2%;float: left; border: 1px solid #ccc; box-sizing: border-box; height: 260px; position: relative; padding: 15px; margin-bottom: 15px;}
+.content1 .notice h4 {margin-bottom: 15px; }
+.content1 .notice em {color: #666; }
+.content1 .notice ul {margin-bottom: 15px; }
+.content1 .notice li {display: block; }
+.content1 .notice li  a{width: 30%;float: left; }
+.content1 .notice li  span{width: 70%;float: left; text-align: right; }
+.content1 .more{position: absolute;right: 15px;top: 15px; }
+
+.content1 .sbn {width: 49%;margin-right: 0%;float: right;height: 260px; }
+
+/* content2 */
+.content2 {overflow: hidden; }
+.content2 h2{ margin-bottom: 15px;}
+.content2 ul { }
+.content2 li {width: 24.25%; margin-right: 1%;  float: left;}
+.content2 li:last-child {margin-right: 0%; }
+.content2 li img { }
+.content2 li span {}

@@ -1,0 +1,54 @@
+
+* {margin: 0;padding: 0;}
+img {width: 100%;}
+li {list-style: none;}
+a {text-decoration: none ;color: #000;}
+
+#wrap {width: 100%;overflow: hidden  }
+.container {width: 1000px; margin: 0 auto; ;}
+
+
+.aside {width: 300px; ;height: 800px;float: left; }
+.content {width: 700px;; float: left;}
+.footer {width: 100%; ;float: left;  background-color: #9cedf2; height: 150px; overflow: hidden; margin-top: 50px;}
+
+
+.aside h2 {width: 150px;}
+.aside nav {font-weight: bold;}
+
+
+.content .banner { width: 100%; margin-bottom: 50px;}
+.notice .ad {font-size: 20px; text-align: center; font-weight: 800; margin-bottom: 30px; }
+.notice .btn-2 {color: #666; }
+.notice .tab-1 { display: block; }
+.notice .tab-1 li { box-sizing: border-box; float: left; width: 20%;}
+.notice .tab-1 img { width: 100px; float: left; margin-right: 30px;}
+.notice .tab-1 span {float: left;}
+
+.notice .tab-2 { display: block; }
+.notice .tab-2 li { box-sizing: border-box; float: left; width: 20%;}
+.notice .tab-2 img { width: 100px; float: left; margin-right: 30px;}
+.notice .tab-2 span {float: left;}
+
+
+/* .notice2 {display: inline; float: left; margin-top: 30px; width: 100%; }
+.notice2 h2 { text-align: center;}
+.notice2  div {float: left; width: 31%;padding: 3%;margin-left: 2%;  background: #ffffff;position: relative;
+border: 2px solid #999; box-sizing: border-box;}
+.notice2  div:last-child {}
+.notice2 ul li { overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.notice2 .more{position: absolute; right: 5px;top: 20px;width: 30px; } */
+
+.notice2 {display: flex ;flex-direction: row ;flex-wrap: wrap ;justify-content: space-between;padding-top: 30px; width: 100%;  }
+.notice2 h2 { text-align: center;}
+.notice2 div .img1 {width: 150px;}
+.notice2  div {background: #ffffff;position: relative;
+border: 2px solid #999; box-sizing: border-box; width: 30%; text-align: center;}
+.notice2  div > ul > li {text-align: center; }
+.notice2 ul li { overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.notice2 .more{position: absolute; right: 5px;top: 5px;width: 30px; }
+
+.footer h2 {width: 100px; float: left;}
+.footer .nav ul {float: left; margin: 20px;}
+.footer div img{width: 100px; float: right; display: inline; margin-top: 20px;}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function func4(){
+    const str = "출력해주세요";
+    return str;
+}
+const val = func4;
+document.write(val)
+
+
+
+function func6(num){
+    if( num == 0) {
+        document.write("출력이요")
+    } else {
+        document.write("너도출력")
+        func6(num -1)
+    }
+
+}
+func6(10)
+
+
+
+
+function callback(num){
+    for(let i=1; i<=5; i++){
+        num(i)
+    }
+}
+const func7 = function(i){
+    document.write("출력")
+}
+callback(func7)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

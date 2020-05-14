@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        #wrap{}
+        * {margin: 0; padding: 0;}
+        #header{height: 150px; background-color: #333;}
+        #banner{height: 400px; background-color: #444;}
+        #content1 {height: 600px; background-color: #555;}
+        
+        #content1 .apple {overflow: hidden; }
+        #content1 .apple div {float: left; background-color: yellow; width: 230px; height: 230px;margin: 10px;} 
+        
+        #content2{height: 250px; background-color: #666;}
+        #content3{height: 300px; background-color: #777;}
+        
+        #content3 .apple{overflow: hidden}
+        #content3 .apple div{float: left; background-color: #fff; width: 480px;height: 480px;margin: 10px; }
+        
+        #footer{height: 200px; background-color: #888;}
+        
+        .apple {width: 1000px; height: inherit; background-color: rgba(0,0,0,0.3); margin: 0 auto;}
+        
+        .notice8 {position: relative; }
+        .notice8 h4{color: aqua }
+        .notice8 ul { }
+        .notice8 ul li { }
+        .notice8 ul li a { }
+        
+        .notice8 .more {position: absolute; background-image:url(../site-webstandard/img/icon.png); right: 0; top: 0;}        
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="header">
+        <div class="apple"></div>
+    </div>
+    <div id="banner">
+        <div class="apple"></div>
+    </div>
+    <div id="content1">
+        <div class="apple">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="content2">
+        <div class="apple"></div>
+    </div>
+    <div id="content3">
+        <div class="apple">
+            <div>
+                <div class="notice8">
+                    <h4>웹 퍼블리셔 면접 질문</h4>
+                    <ul>
+                        <li><a href="#">
+                            dispaly: inling과 display: black의 차이점은 무엇인가?
+                        </a></li>
+                        <li><a href="#">
+                            HTML 태그중에 dl, dd, ul, li, ol의 차이점은 무엇인가?
+                        </a></li>
+                        <li><a href="#">
+                            HTML 태그중에 STRONG 과 EM 태그의 차이점을 말해보라
+                        </a></li>
+                        <li><a href="#">
+                            컨텐츠 요소를 가운데로 오게 하는 방법을 알아보라
+                        </a></li>
+                        <li><a href="#">
+                            독타입을 선언하는 이유에 대해서 설명하세요
+                        </a></li>
+                    </ul>
+                    <a href="#" class="more" title="더보기">더보기</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="apple"></div>
+    </div>
+</div>
+</body>
+</html>

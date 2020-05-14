@@ -1,0 +1,59 @@
+/* reest */
+* { margin: 0;padding: 0;}
+img {width: 100%}
+li {list-style: none}
+a {text-decoration: none ; color: #999}
+.clearfix::before, .clearfix::after { display: block;content: ''; clear: both;}
+
+/* css */
+#wrap {width: 100%; }
+.container{width: 1200px; margin: 0 auto;}
+
+.header {}
+.banner {}
+.content1 { }
+.content2 { }
+.footer { }
+
+
+
+.header h1 { }
+.header h1 img {width: 150px; float: left;}
+.header nav {float: right }
+.header nav ul {padding: 15px; margin: 5px; }
+.header nav li {display: inline; margin-right: 5px;}
+.header nav a { }
+
+
+
+.banner img {width: 100%; }
+
+
+
+
+.content1 {overflow: hidden; margin-top: 15px;}
+.content1 .notice {width: 49%; margin-right: 2%;float: left; position: relative; height: 220px; border: 1px solid #ccc; box-sizing: border-box; padding: 30px;}
+.content1 .notice h4 { }
+.content1 .notice em {color: #555; }
+.content1 .notice ul {padding: 20px 0px;}
+.content1 .notice li { }
+.content1 .notice li a {width: 30%;float: left; }
+.content1 .notice li span {width: 70%;float: left; text-align: right; }
+.content1 .more {position: absolute; right: 30px; top: 30px;}
+
+.content1 .sbn {width: 49%; margin-right: 0%;float: right; height: 220px;} 
+
+
+
+.content2 { overflow: hidden ;margin-top: 15px;}
+.content2 h2 {margin-bottom: 15px; }
+.content2 ul { }
+.content2 li {float: left;width: 24.25%; margin-right: 1%; }
+.content2 li:last-child {margin-right: 0%; }
+.content2 img {width: 100%; }
+.content2 span { }
+
+
+.footer {margin-top: 30px; }
+.footer ul { color: #555; ;}
+.footer li { margin: 10px;}

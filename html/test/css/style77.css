@@ -1,0 +1,52 @@
+/* 리셋 */
+
+* {margin: 0;padding: 0;}
+a {text-decoration: none; color: #000;}
+li {list-style: none;}
+img {width: 100%;}
+
+/* 레이아웃 */
+#wrap {width: 100%;}
+.container {width: 1000px; margin: 0 auto;}
+#header {overflow: hidden;}
+#banner {}
+#content1 {overflow: hidden;}
+#content2 {overflow: hidden; }
+#footer {height: 150px;background: #666666;}
+
+
+
+#header h1 {float: left; }
+#header h1 img {width: 150px; }
+#header nav {float: right; padding: 10px 0 30px 10px 30px }
+#header nav ul{}
+#header nav li{display: inline; padding-left: 20px;}
+#header nav li a{}
+
+
+#banner img {width: 100%;}
+
+
+#content1 .notice {float: left;width: 49%; margin-right: 2%;; padding: 20px 10px 20px 10px; box-sizing: border-box; background: #f2f2f2 url(../images1/sbanner11.jpg) no-repeat right 20px center ; background-size: 80px;}
+
+.notice .title{}
+.notice .desc{padding-bottom: 15px;}
+.notice .butten{background: url(../images1/con1.1.jpg) no-repeat;
+    background-size: 20px;
+padding-left: 30px;}
+
+#content1 .notice1 {float: right;width: 49%;margin-right: 0%;; padding: 20px 10px 20px 10px; box-sizing: border-box; background: #f2f2f2 url(../images1/sbanner22.jpg) no-repeat right 20px center;
+background-size: 80px;}
+.notice1 .title{}
+.notice1 .desc{padding-bottom: 15px}
+.notice1 .butten{background: url(../images1/con1.2.jpg)
+no-repeat ; background-size: 10px;padding-left: 20px;}
+
+
+#content2 h2{font-size: 24px; }
+#content2 em { }
+#content2 .best { }
+#content2 .best figure {float: left; width: 32.6%; margin-right: 1% ;}
+#content2 .best figure:last-child {margin-right: 0;}
+#content2 .best figcaption {background: url(../images1/content.box3.jpg) no-repeat right bottom;
+background-size: 20px;}
