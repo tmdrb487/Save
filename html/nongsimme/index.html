@@ -74,11 +74,11 @@
         </h1>
         <nav id="nav" class="nav">
             <ul>
-                <li><a href="#">농심소개</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">홍보센터</a></li>
-                <li><a href="#">투자정보</a></li>
-                <li><a href="#">고객지원</a></li>
+                <li><a href="#"><span>농심소개</span></a></li>
+                <li><a href="#"><span>지속가능경영</span></a></li>
+                <li><a href="#"><span>홍보센터</span></a></li>
+                <li><a href="#"><span>투자정보</span></a></li>
+                <li><a href="#"><span>고객지원</span></a></li>
                 <li class="live"><a href="#">N.LIVE</a></li>
             </ul>
         </nav>
@@ -96,7 +96,8 @@
         <div class="banner">
             <div class="mbanner">
                 <div class="notice3">
-                    <div class="ffont"><i class="fas fa-arrow-left"></i><a href="#">홍보센터  </a><a href="#">농심 이벤트  </a><a href="#">포인트 마켓 <a href="#" class="bbt1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white">
+                    <div class="ffont"><i class="fas fa-arrow-left"></i><a href="#" class="sksms">홍보센터  </a><a href="#" class="sksms">농심 이벤트  </a><a href="#" class="sksms">포인트 마켓 <a href="#" class="bbt1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white" class="ssve">
                         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
                     </svg></a></div>
@@ -367,10 +368,8 @@
                         <div class="swiper-slide"><a href="#"><img src="../nongsimme/assets/icons/img/imgsl7.jpg" alt="자주 묻는 질문"><span>라면피디아</span></a></div>
                     </div> 
                         <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+    <!-- Add Scrollbar -->
+    <div class="swiper-scrollbar"></div>
 
 </section>
             <!-- //img-slide -->     
@@ -430,12 +429,13 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
-          scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: true,
-          },
-        });
+ var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+      },
+    });
       </script>
       <script>
       </script>

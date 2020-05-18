@@ -366,6 +366,7 @@ button.swiper-pagination-bullet {
   bottom: 3px;
   z-index: 50;
   height: 5px;
+  border-radius: 20px;
   width: 98%;
 }
 .swiper-container-vertical > .swiper-scrollbar {
