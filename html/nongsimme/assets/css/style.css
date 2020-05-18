@@ -748,12 +748,6 @@
   height: 400px;
 }
 
-.swiper-wrapper {
-  width: 100%;
-  height: 400px;
-  background: #999;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -762,8 +756,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  height: 500px;
-  background: #f2f1de;
+  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
