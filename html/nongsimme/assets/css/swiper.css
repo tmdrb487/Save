@@ -355,6 +355,11 @@ button.swiper-pagination-bullet {
   -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
 }
+
+#img-slide {
+  position: relative;
+}
+
 .swiper-container-horizontal > .swiper-scrollbar {
   position: absolute;
   left: 1%;
