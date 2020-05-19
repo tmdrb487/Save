@@ -399,6 +399,16 @@
   color: #fff;
 }
 
+.btn2 a:hover::before {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: #CA0202;
+  position: absolute;
+  right: 4%;
+  top: 75%;
+}
+
 .ffont .bbt1 {
   padding-left: 80%;
   padding-top: -20px;
@@ -536,7 +546,7 @@
 /* 이미지 슬라이드 */
 #swiper-slide {
   padding-top: 100px;
-  height: 400px;
+  height: 450px;
 }
 
 .swiper-wrapper {
@@ -545,7 +555,7 @@
 }
 
 .swiper-wrapper img {
-  width: 650px;
+  width: 570px;
 }
 
 .swiper-container {
@@ -690,5 +700,20 @@
   height: 54px;
   font-size: 30px;
   text-align: center;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li a.on::after {
+  content: '';
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  left: 20%;
+  top: -90%;
+  background: #ca0202;
+  translate: -50%, -50%;
 }
 /*# sourceMappingURL=style.css.map */

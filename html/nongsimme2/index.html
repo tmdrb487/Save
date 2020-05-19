@@ -311,7 +311,14 @@
               $(".box5").show()
           })   
 
+// $(".header .nav ul li a").click(function(){
+//     $(this).addClass("on")
+// })
 
+$(".header .nav ul li a").click(function(e){
+            e.preventDefault();
+            $(this).addClass("on").parent().siblings().find("a").removeClass("on");
+        });
 
       </script>
 </body>

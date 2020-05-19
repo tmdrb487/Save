@@ -199,6 +199,7 @@
 .bf1 span::before { content: '';width: 535px;height: 1px;background-color: rgba(255,255,255,0.4); position: absolute; left: 47%;top: 49%;transform: translateX(-50%); }
 .bf1 span::after { content: '';width: 1px;height: 150px;background-color: rgba(255,255,255,0.4); position: absolute; left: 32.9%;top: 49%;transform: translateX(-50%); }
 
+
 .bf2 span::before { content: '';width: 625px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -15%;top: 85%; }
 .bf2 span::after { content: '';width: 2px;height: 198px;background-color: rgba(255,255,255,0.4); position: absolute; right: -10%;top: 2%; }
 
@@ -241,6 +242,10 @@ font-size: 16px; margin-top: 20px;font-weight: bold; padding-top: 20px; color: #
 .fa-arrow-left { padding-top: 10px;}
 .ffont svg {width: 25px; transform: rotate(-90deg);padding-top: 5px; position: absolute;right:-8%;top: -5%;}
 .btn2 i { color: #fff;}
+
+.btn2 a:hover {
+    &::before {content: '';width: 40px; height: 3px;background:#CA0202; position: absolute; right:4%;top: 75%;;} 
+}
 .ffont .bbt1 { padding-left: 80%;padding-top: -20px}
 .ffont .bbt1::before {content: '';width: 15px;height: 1px;;background: none; position: absolute; right:-7.5%;bottom: -12%; transition: all 0.3s; }
 .ffont .bbt1:hover{
@@ -294,14 +299,14 @@ position: relative;}
 
   #swiper-slide{
       padding-top: 100px;
-      height: 400px;
+      height: 450px;
   }
   .swiper-wrapper {
       width: 100%;
       background: #999;
   }
   .swiper-wrapper img{
-      width: 650px;
+      width: 570px;
   }
   .swiper-container {
     width: 100%;
@@ -420,3 +425,5 @@ border-radius: 50%;
 .tbl-page i {  font-size: 25px; padding: 0 20px;}
 .page_num a{display: inline-block;
 width: 54px;height: 54px; font-size: 30px; text-align: center; }
+.nav ul li {position: relative; }
+.nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); }

@@ -324,6 +324,9 @@ font-size: 16px; margin-top: 20px;font-weight: bold; padding-top: 20px; color: #
 .fa-arrow-left { padding-top: 10px;}
 .ffont svg {width: 25px; transform: rotate(-90deg);padding-top: 5px; position: absolute;right:-8%;top: -5%;}
 .btn2 i { color: #fff;}
+.btn2 a:hover {
+    &::before {content: '';width: 40px; height: 3px;background:#CA0202; position: absolute; right:4%;top: 75%;;} 
+}
 .ffont .bbt1 { padding-left: 80%;padding-top: -20px}
 .ffont .bbt1::before {content: '';width: 15px;height: 1px;;background: none; position: absolute; right:-7.5%;bottom: -12%; transition: all 0.3s; }
 .ffont .bbt1:hover{
@@ -429,25 +432,26 @@ font-size: 16px; margin-top: 20px;font-weight: bold; padding-top: 20px; color: #
   /* 이미지 슬라이드 */
 
   #swiper-slide{
-      height: 400px;
-  }
-  .swiper-wrapper {
-      width: 100%;
-      background: #999;
-  }
-  .swiper-wrapper img{
-      width: 650px;
-  }
-  .swiper-container {
+    padding-top: 100px;
+    height: 450px;
+}
+.swiper-wrapper {
     width: 100%;
-    height: 100%;
-  }
-  .swiper-slide {
-      width: 33.33% !important;
-    text-align: center;
-    font-size: 18px;
-    height: 500px;
-    background: #f2f1de;
+    background: #999;
+}
+.swiper-wrapper img{
+    width: 570px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+    width: 33.33% !important;
+  text-align: center;
+  font-size: 18px;
+  height: 500px;
+  background: #f2f1de;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -552,3 +556,5 @@ font-size: 16px; margin-top: 20px;font-weight: bold; padding-top: 20px; color: #
     background: url(../icons/img/graphic2.svg) no-repeat; position: absolute; left: 86%;top: 80%;
     width: 220px; height: 220px;
 }
+.nav ul li {position: relative; }
+.nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); }
