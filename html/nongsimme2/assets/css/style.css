@@ -127,6 +127,7 @@
 }
 
 #banner .banner {
+  padding-top: 80px;
   height: 550px;
   background: url(../icons/img/main_visual.png) no-repeat center;
   position: relative;
@@ -204,10 +205,12 @@
           transform: translateX(-50%);
   text-align: center;
   color: #fff;
+  padding-top: 35px;
 }
 
 #banner .banner .bannerfont {
   text-align: center;
+  padding-top: -80px;
   color: #fff;
 }
 
@@ -236,7 +239,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: 47%;
-  top: 42%;
+  top: 49%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -248,7 +251,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: 32.9%;
-  top: 42%;
+  top: 49%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -260,7 +263,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: -15%;
-  top: 70%;
+  top: 85%;
 }
 
 .bf2 span::after {
@@ -270,7 +273,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   right: -10%;
-  top: -28%;
+  top: 2%;
 }
 
 .jm::before {
@@ -281,7 +284,7 @@
   background: #96c11f;
   position: absolute;
   left: 50%;
-  top: 41%;
+  top: 48%;
 }
 
 #banner {
@@ -659,15 +662,33 @@
 }
 
 .pl {
-  padding-left: 10px;
-  padding-top: -5px;
+  padding-left: 20px;
 }
 
 .pl a {
   color: #999;
-  font-size: 14px;
-  position: absolute;
-  left: 5%;
-  top: 20%;
+}
+
+.tbl-page {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.active {
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.tbl-page i {
+  font-size: 25px;
+  padding: 0 20px;
+}
+
+.page_num a {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  font-size: 30px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

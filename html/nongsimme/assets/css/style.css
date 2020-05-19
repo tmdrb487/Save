@@ -127,6 +127,7 @@
 }
 
 #banner .banner {
+  padding-top: 80px;
   height: 550px;
   background: url(../icons/img/banner.png) no-repeat center;
   position: relative;
@@ -204,10 +205,12 @@
           transform: translateX(-50%);
   text-align: center;
   color: #fff;
+  padding-top: 35px;
 }
 
 #banner .banner .bannerfont {
   text-align: center;
+  padding-top: -80px;
   color: #fff;
 }
 
@@ -236,7 +239,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: 47%;
-  top: 42%;
+  top: 49%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -247,8 +250,8 @@
   height: 150px;
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
-  left: 33%;
-  top: 42%;
+  left: 32.9%;
+  top: 49%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -260,7 +263,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   left: -15%;
-  top: 70%;
+  top: 85%;
 }
 
 .bf2 span::after {
@@ -270,7 +273,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   right: -10%;
-  top: -28%;
+  top: 2%;
 }
 
 .jm::before {
@@ -281,7 +284,7 @@
   background: #96c11f;
   position: absolute;
   left: 50%;
-  top: 41%;
+  top: 48%;
 }
 
 #banner {
@@ -291,7 +294,7 @@
 .brn-quick a {
   position: absolute;
   left: 50%;
-  bottom: -5%;
+  bottom: 2%;
   width: 50px;
   height: 50px;
   z-index: 1000;

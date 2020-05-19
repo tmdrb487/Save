@@ -117,7 +117,7 @@
  #banner{
 
     .banner {
-
+        padding-top: 80px;
         height: 550px;;
         background: url(../icons/img/main_visual.png) no-repeat center;
         position: relative; 
@@ -182,11 +182,13 @@
             position: absolute; left: 50%;top: 50%;
             transform: translateX(-50%);
             text-align: center;
-            color: #fff;
+            color: #fff; 
+            padding-top: 35px;
 
         }
 
        .bannerfont { text-align: center;
+        padding-top: -80px;
     color: #fff;}
     }
 }
@@ -194,13 +196,13 @@
 .ffont a::before {content: '/'; width: 2px; height: 20px;; position: absolute; left: 47.8%;top: 8%;}
 .ffont a::after {content: "/"; width: 2px; height: 20px;; position: absolute; left:72%;top: 8%;}
 
-.bf1 span::before { content: '';width: 535px;height: 1px;background-color: rgba(255,255,255,0.4); position: absolute; left: 47%;top: 42%;transform: translateX(-50%); }
-.bf1 span::after { content: '';width: 1px;height: 150px;background-color: rgba(255,255,255,0.4); position: absolute; left: 32.9%;top: 42%;transform: translateX(-50%); }
+.bf1 span::before { content: '';width: 535px;height: 1px;background-color: rgba(255,255,255,0.4); position: absolute; left: 47%;top: 49%;transform: translateX(-50%); }
+.bf1 span::after { content: '';width: 1px;height: 150px;background-color: rgba(255,255,255,0.4); position: absolute; left: 32.9%;top: 49%;transform: translateX(-50%); }
 
-.bf2 span::before { content: '';width: 625px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -15%;top: 70%; }
-.bf2 span::after { content: '';width: 2px;height: 198px;background-color: rgba(255,255,255,0.4); position: absolute; right: -10%;top: -28%; }
+.bf2 span::before { content: '';width: 625px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -15%;top: 85%; }
+.bf2 span::after { content: '';width: 2px;height: 198px;background-color: rgba(255,255,255,0.4); position: absolute; right: -10%;top: 2%; }
 
-.jm::before {content: '';width: 15px;height: 15px;border-radius: 50%;;background: #96c11f; position: absolute; left: 50%; top: 41%; }
+.jm::before {content: '';width: 15px;height: 15px;border-radius: 50%;;background: #96c11f; position: absolute; left: 50%; top: 48%; }
 #banner { position: relative;}
 .brn-quick{
         
@@ -406,5 +408,15 @@ position: relative;}
     }
 }
 
-.pl {padding-left: 10px; padding-top: -5px;}
-.pl a { color: #999; font-size: 14px; position: absolute; left: 5%;top: 20%;}
+.pl {padding-left: 20px;}
+.pl a { color: #999;  ;}
+.tbl-page{
+    padding-top: 40px;
+text-align: center;
+}
+.active{ border: 1px solid #000;
+border-radius: 50%;
+}
+.tbl-page i {  font-size: 25px; padding: 0 20px;}
+.page_num a{display: inline-block;
+width: 54px;height: 54px; font-size: 30px; text-align: center; }
