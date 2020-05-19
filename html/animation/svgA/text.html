@@ -1,16 +1,58 @@
-<h4>샘플</h4>
-<div class="svgBox">
-  <svg class="svg">
-    <polygon fill="#f48fb1" points="137,146 8,107 107,15 "/>
-  </svg>
-  <svg class="svg">
-    <polygon fill="#f48fb1" points="104,145 24,126 17,43 94,12 147,75 "/>
-</svg>
-<svg class="svg">
-    <polygon fill="#f48fb1" points="130,130 61,148 12,97 31,29 99,11 148,62 "/>
-</svg>
-<svg class="svg">
-    <polygon fill="#f48fb1" points="131,135 85,117 45,144 48,96 10,66 57,54 74,9 
-        100,49 148,51 117,88"/>
-</svg>
-</div>
+&lt;div class="bs-docs-section"&gt;
+  &lt;h2 id="intro6" class="page-header"&gt;clip-path&lt;/h2&gt;
+  &lt;div class="svgBox"&gt;
+    &lt;svg class="svg"&gt;
+        &lt;image xlink:href="../../assets/img/svg-lemon.svg" width="160" height="160" /&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+      &lt;image xlink:href="../../assets/img/svg-lemon.svg" width="160" height="160" clip-path="circle(30px at center)" /&gt;
+  &lt;/svg&gt;
+  &lt;svg class="svg"&gt;
+      &lt;clipPath id="clip1"&gt;
+          &lt;polygon points="90.181,99.566 76.593,87.318 63.313,99.899 64.417,81.64 
+46.301,79.101 61.266,68.58 51.955,52.833 69.512,57.973 76.018,40.876 82.945,57.807 100.369,52.233 91.451,68.206 106.672,78.353 
+88.624,81.34 "/&gt;
+      &lt;/clipPath&gt;
+      &lt;image xlink:href="../../assets/img/svg-lemon.svg" width="160" height="160" clip-path="url(#clip1)" /&gt;
+  &lt;/svg&gt;
+  &lt;svg class="svg"&gt;
+      &lt;clipPath id="clip2"&gt;
+          &lt;path d="M99.018,99.115c11.119,10.086-1.931,19.756-8.343,6.182
+          c6.412,13.574-9.344,17.514-10.074,2.52c0.73,14.994-15.334,12.604-10.271-1.528c-5.063,14.133-18.99,5.777-8.904-5.342
+          c-10.086,11.119-19.755-1.932-6.182-8.344c-13.573,6.412-17.513-9.343-2.519-10.073c-14.994,0.73-12.604-15.334,1.528-10.271
+          c-14.133-5.063-5.777-18.991,5.342-8.904c-11.119-10.087,1.931-19.756,8.343-6.182c-6.412-13.574,9.344-17.513,10.074-2.519
+          c-0.729-14.994,15.334-12.604,10.27,1.528c5.064-14.133,18.991-5.777,8.905,5.342c10.086-11.119,19.756,1.93,6.182,8.343
+          c13.574-6.413,17.513,9.343,2.519,10.074c14.994-0.73,12.604,15.334-1.528,10.27C118.492,95.275,110.137,109.201,99.018,99.115z"/&gt;
+      &lt;/clipPath&gt;
+      &lt;image xlink:href="../../assets/img/svg-lemon.svg" width="160" height="160" clip-path="url(#clip2)" /&gt;
+  &lt;/svg&gt;
+  &lt;svg class="svg"&gt;
+      &lt;text x="5" y="100" font-size="70" font-family="Black Han Sans"&gt;SVG&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;svg class="svg"&gt;
+      &lt;!-- &lt;pattern id="pattern1" patternUnits="useSpaceOnUse" width="160" height="160"&gt;
+          &lt;image xlink:href="../../assets/img/svg-hotdog.svg" width="100" height="100"/&gt;
+      &lt;/pattern&gt; --&gt;
+      &lt;pattern id="pattern1" patternUnits="useSpaceOnUse" width="100%" height="100%"&gt;
+          &lt;image xlink:href="../../assets/img/svg-lemon.svg" width="100" height="100"/&gt;
+      &lt;/pattern&gt;
+      &lt;text x="5" y="100" font-size="70" font-family="Black Han Sans" fill="url(#pattern1)"&gt;SVG&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;br&gt;
+  &lt;div class="text-wrap"&gt;
+      &lt;div class="text-clip"&gt;
+          SVG
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="text-wrap"&gt;
+      &lt;div class="text-clip t2"&gt;
+          SVG
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="text-wrap"&gt;
+      &lt;div class="text-clip3"&gt;
+          SVG
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;

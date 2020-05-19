@@ -76,7 +76,7 @@
             <ul>
                 <li><a href="#"><span>농심소개</span></a></li>
                 <li><a href="#"><span>지속가능경영</span></a></li>
-                <li><a href="#"><span>홍보센터</span></a></li>
+                <li><a href="#"><span class="sppan">홍보센터</span></a></li>
                 <li><a href="#"><span>투자정보</span></a></li>
                 <li><a href="#"><span>고객지원</span></a></li>
                 <li class="live"><a href="#">N.LIVE</a></li>
@@ -96,18 +96,18 @@
         <div class="banner">
             <div class="mbanner">
                 <div class="notice3">
-                    <div class="ffont"><i class="fas fa-arrow-left"></i><a href="#" class="sksms">홍보센터  </a><a href="#" class="sksms">농심 이벤트  </a><a href="#" class="sksms">포인트 마켓 <a href="#" class="bbt1">
+                    <div class="ffont"><i class="fas fa-arrow-left"></i><a href="#" class="sksms">홍보센터  </a><a href="#" class="sksms">농심 이벤트  </a><a href="#" class="sksms">포인트 마켓</a> <div class="bbt1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white" class="ssve">
                         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
-                    </svg></a></div>
+                    </svg></div></div>
                     <div class="rright"><div class="box"></div><i class="icon-more-vertical"></i></div>
                 </div>
                 <div class="notice4">
                     <div class="btn2"><a href="#"><i class="fas fa-ellipsis-v"></i></a></div>
                 </div>
             </div>
-            <h3 class="bannerfont bf1"><a href="#"><span>포인트 마켓</span></a></h3>
+            <h3 class="bannerfont bf1"><span>포인트 마켓</span></h3>
             <div class="jm"></div>
             <h3 class="bannerfontb bf2"><span>봉 포인트로 재밌는 마켓에 참여하고<br>
                 실제 상품으로 교환하세요!</span></h3>
@@ -133,6 +133,7 @@
                             <li>-미당첨, 경매 유찰자 분들의 봉포인트는 당첨자 발표일 이후 참여포인트 제외하고 반환됩니다.</li>
                         </ul>
                         <p><a href="#">농시미 가이드 자세히 보기</a></p>
+                        <div class="gra"></div>
                     </div>
                     <div class="up-btn">
                         <a href="#">
@@ -146,6 +147,7 @@
                 <div class="cont2">
                     <div class="notice1">
                         <h2>진행중 포인트 상품</h2>
+                        <div class="gra"></div>
                         <div class="c1"><img src="../nongsimme/assets/icons/img/4_.jpg" alt="농심"></div>
                     </div>
                     <div class="notice2">
@@ -177,7 +179,7 @@
                     <h2 class="cont3h2">마감된 포인트 상품</h2>
                     <div class="cont3-1">
                         <ul>
-                            <li><a href="#"><em>전체</em></a></li>
+                            <li><a href="#" class="btn77"><em>전체</em></a></li>
                             <li><a href="#" class="btn88">포인트 샵</a></li>
                             <li><a href="#" class="btn99">포인트 경매</a></li>
                         </ul>
@@ -438,6 +440,30 @@
     });
       </script>
       <script>
+     
+          $(".btn88").click(function(e){
+              e.preventDefault()
+              $(".box1").hide()
+              $(".box2").hide()
+              $(".box4").show()
+              $(".box5").show()
+          })
+  
+          $(".btn99").click(function(e){
+              e.preventDefault()
+              $(".box4").hide()
+              $(".box5").hide()
+              $(".box1").show()
+              $(".box2").show()
+          })
+          $(".btn77").click(function(e){
+              e.preventDefault()
+              $(".box1").show()
+              $(".box2").show()
+              $(".box4").show()
+              $(".box5").show()
+          })   
+
       </script>
 </body>
 
