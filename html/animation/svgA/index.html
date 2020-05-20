@@ -607,7 +607,7 @@
     }
 
     .aniPath1 {
-        fill: #fff; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
+        fill: none; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
         animation: path1 4s infinite linear alternate-reverse;
         transform-origin: center center;
         stroke-dasharray: 2000;
@@ -615,6 +615,37 @@
     @keyframes path1 {
         0% {stroke-dashoffset: 2000; transform: rotate(360deg);}
         100% {stroke-dashoffset: 0; transform: rotate(0deg);}
+    }
+
+    .aniPath2 {
+        fill: none; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
+        animation: path1 4s infinite linear alternate-reverse;
+        transform-origin: center center;
+        stroke-dasharray: 783;
+    }
+    @keyframes path2 {
+        0% {stroke-dashoffset: 783;}
+        100% {stroke-dashoffset: 0;}
+    }
+    .aniPath3 {
+        fill: none; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
+        animation: path1 4s infinite linear alternate-reverse;
+        transform-origin: center center;
+        stroke-dasharray: 3248;
+    }
+    @keyframes path3 {
+        0% {stroke-dashoffset: 3248;}
+        100% {stroke-dashoffset: 0;}
+    }
+    .aniPath4 {
+        fill: none; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
+        animation: path1 4s infinite linear alternate-reverse;
+        transform-origin: center center;
+        stroke-dasharray: 352;
+    }
+    @keyframes path4 {
+        0% {stroke-dashoffset: 352;}
+        100% {stroke-dashoffset: 0;}
     }
 </style>
 <!-- Intro7 -->
@@ -643,58 +674,35 @@
         c85.248-29.425,89.64,11.093,0.067,0.617c89.572,10.476,75.95,48.888-0.208,0.585c76.158,48.303,47.218,77-0.44,0.437
         C130.771,151.794,92.246,165.092,82.525,75.434z"/>
     </svg>
+    <svg class="svg">
+        <path class="aniPath2" d="M87.035,116.239C94,146.45,61.551,146.521,68.383,116.28
+        c-6.832,30.24-36.101,16.225-16.824-8.057c-19.277,24.281-39.564-1.042-11.661-14.556C11.995,107.182,4.705,75.559,35.708,75.49
+        c-31.003,0.068-23.851-31.584,4.111-18.193c-27.962-13.391-7.785-38.806,11.598-14.608c-19.383-24.197,9.823-38.341,16.788-8.13
+        C61.239,4.348,93.688,4.277,86.856,34.518c6.832-30.241,36.1-16.226,16.822,8.056c19.277-24.281,39.565,1.044,11.661,14.557
+        c27.904-13.513,35.194,18.108,4.19,18.177c31.004-0.068,23.853,31.587-4.11,18.194c27.963,13.393,7.785,38.805-11.598,14.607
+        C123.205,132.307,94,146.45,87.035,116.239z"/>
+    </svg>
+    <svg class="svg">
+        <path class="aniPath3" d="M61.765,63.721c100.682,91.045,65.804,116.973,7.629-5.672
+        c58.174,122.645,16.032,133.252,9.219-2.32c6.813,135.572-36.183,129.245,9.406,1.384C42.43,184.974,5.13,162.673,96.178,61.991
+        C5.13,162.673-20.796,127.796,101.849,69.62c-122.645,58.176-133.251,16.03,2.32,9.22c-135.571,6.811-129.243-36.184-1.385,9.404
+        C-25.074,42.656-2.775,5.356,97.907,96.404C-2.775,5.356,32.103-20.57,90.277,102.075c-58.175-122.646-16.032-133.252-9.219,2.32
+        c-6.813-135.572,36.183-129.244-9.405-1.385c45.588-127.859,82.888-105.559-8.16-4.878c91.047-100.681,116.975-65.805-5.671-7.629
+        c122.646-58.176,133.252-16.033-2.32-9.219c135.572-6.814,129.242,36.181,1.385-9.405
+        C184.744,117.466,162.446,154.766,61.765,63.721z"/>
+    </svg>
+    <svg class="svg">
+        <path class="aniPath4" d="M15.324,9.188c4.593,4.593-9.55,18.735-4.957,23.328
+        c4.592,4.592,18.734-9.551,23.326-4.959c4.592,4.592-9.55,18.734-4.958,23.327c4.593,4.592,18.735-9.55,23.328-4.958
+        c4.593,4.594-9.549,18.736-4.956,23.33c4.593,4.592,18.735-9.55,23.328-4.958c4.592,4.592-9.551,18.734-4.959,23.326
+        s18.734-9.551,23.326-4.959s-9.55,18.734-4.958,23.327c4.594,4.593,18.735-9.549,23.329-4.956
+        c4.595,4.595-9.548,18.737-4.953,23.332c4.594,4.593,18.735-9.549,23.329-4.956c4.596,4.597-9.546,18.738-4.95,23.335
+        c4.597,4.597,18.739-9.546,23.336-4.949"/>
+    </svg>
 </div>
 
-<pre class="line-numbers language-css"><code>.aniRect1 {
-stroke: #880e4f; stroke-width: 18;
-transform-origin:center center ;
-animation: rect1 8s infinite ease-in-out;
-}
-@keyframes rect1 {
-0% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
-35% {stroke:#311b92; stroke-width: 1; transform: rotate(360deg);}
-70% {stroke:#004d40; stroke-width: 1; transform: rotate(360deg);}
-100% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
-}
-.aniRect2 {
-stroke: #880e4f; stroke-width: 4;
-animation: rect2 4s infinite ease-in-out alternate;
-stroke-dasharray: 50;
-stroke-dashoffset: 50;
-stroke-linecap: round;
-}
-@keyframes rect2 {
-0% {stroke:#880e4f; stroke-dashoffset: 100; }
-35% {stroke:#311b92; }
-70% {stroke:#004d40; }
-100% {stroke:#880e4f; stroke-dashoffset: 0;}
-}
-.aniRect3 {
-stroke: #880e4f; stroke-width: 4;
-animation: rect3 4s infinite ease-in-out alternate;
-stroke-dasharray: 100;
-stroke-dashoffset: 100;
-stroke-linecap: round;
-}
-@keyframes rect3 {
-0% {stroke:#880e4f; stroke-dashoffset: 100; }
-35% {stroke:#311b92; }
-70% {stroke:#004d40; }
-100% {stroke:#880e4f; stroke-dashoffset: 0;}
-}
-.aniRect4 {
-stroke: #880e4f; stroke-width: 4;
-animation: rect4 2s infinite linear;
-stroke-dasharray: 400;
-stroke-dashoffset: 400;
-stroke-linecap: round;
-}
-@keyframes rect4 {
-0% {stroke:#880e4f; stroke-dashoffset: 400; }
-35% {stroke:#311b92; }
-70% {stroke:#004d40; }
-100% {stroke:#880e4f; stroke-dashoffset: 0;}
-}
+<pre class="line-numbers language-css"><code>
+
 </code></pre>
 </div>
 <!-- //Intro7 -->
@@ -708,10 +716,10 @@ stroke-linecap: round;
 <div class="bs-sidebar hidden-print" role="complementary">
 <ul class="nav bs-sidenav">
     <li><a href="#intro0">SVG</a></li>
-    <li><a href="#intro1">rect(사각형)</a></li>
-    <li><a href="#intro2">circle(원형)</a></li>
-    <li><a href="#intro3">polygon(다각형)</a></li>
-    <li><a href="#intro4">line, polyline(선)</a></li>
+    <li><a href="#intro1">rect</a></li>
+    <li><a href="#intro2">circle</a></li>
+    <li><a href="#intro3">polygon</a></li>
+    <li><a href="#intro4">line, polyline</a></li>
     <li><a href="#intro5">path</a></li>
     <li><a href="#intro6">clip-path</a></li>
     <li><a href="#intro7">Animation</a></li>
@@ -747,6 +755,14 @@ stroke-linecap: round;
 <script src="../../assets/js/bootstrap.min.js"></script>
 <script src="../../assets/js/docs.min.js"></script>
 <script src="../../assets/js/prism.js"></script>
+<script>
+    //let Path = $(".aniPath2")  /*jquery*/
+ let Path = document.querySelector(".aniPath2")  /*javascript*/
+    let length = Path.getTotalLength();
+    // alert(length)
+
+
+</script>
 </body>
 
 </html>
