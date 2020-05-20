@@ -556,5 +556,5 @@ font-size: 16px; margin-top: 20px;font-weight: bold; padding-top: 20px; color: #
     background: url(../icons/img/graphic2.svg) no-repeat; position: absolute; left: 86%;top: 80%;
     width: 220px; height: 220px;
 }
-.nav ul li {position: relative; }
-.nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); }
+// .nav ul li {position: relative; }
+// .nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); }
