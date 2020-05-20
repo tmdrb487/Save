@@ -90,7 +90,7 @@
     <div class="container bs-docs-container">
         <div class="row">
 
-            <div class="col-md-9" role="main">
+            <class class="col-md-9" role="main">
 
                 <!-- Intro0 -->
                 <div class="bs-docs-section">
@@ -554,70 +554,199 @@
   &lt;/div&gt;
   &lt;/div&gt;
 </code></pre>
-                <!-- //Intro6 -->
-                <!-- Intro7 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro7" class="page-header">Illustrator</h2>
-                    <p class="bs-callout bs-callout-info"></p>
-                    <p></p>
-                </div>
-                <!-- //Intro7 -->
-                <!-- Intro8 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro8" class="page-header">Illustrator</h2>
-                    <p class="bs-callout bs-callout-info"></p>
-                    <p></p>
-                </div>
-                <!-- //Intro8 -->                                
+<style>
+    .aniRect1 {
+        stroke: #880e4f; stroke-width: 18;
+        transform-origin:center center ;
+        animation: rect1 8s infinite ease-in-out;
+    }
+    @keyframes rect1 {
+        0% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
+        35% {stroke:#311b92; stroke-width: 1; transform: rotate(360deg);}
+        70% {stroke:#004d40; stroke-width: 1; transform: rotate(360deg);}
+        100% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
+    }
+    .aniRect2 {
+        stroke: #880e4f; stroke-width: 4;
+        animation: rect2 4s infinite ease-in-out alternate;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        stroke-linecap: round;
+    }
+    @keyframes rect2 {
+        0% {stroke:#880e4f; stroke-dashoffset: 100; }
+        35% {stroke:#311b92; }
+        70% {stroke:#004d40; }
+        100% {stroke:#880e4f; stroke-dashoffset: 0;}
+    }
+    .aniRect3 {
+        stroke: #880e4f; stroke-width: 4;
+        animation: rect3 4s infinite ease-in-out alternate;
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        stroke-linecap: round;
+    }
+    @keyframes rect3 {
+        0% {stroke:#880e4f; stroke-dashoffset: 100; }
+        35% {stroke:#311b92; }
+        70% {stroke:#004d40; }
+        100% {stroke:#880e4f; stroke-dashoffset: 0;}
+    }
+    .aniRect4 {
+        stroke: #880e4f; stroke-width: 4;
+        animation: rect4 2s infinite linear;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        stroke-linecap: round;
+    }
+    @keyframes rect4 {
+        0% {stroke:#880e4f; stroke-dashoffset: 400; }
+        35% {stroke:#311b92; }
+        70% {stroke:#004d40; }
+        100% {stroke:#880e4f; stroke-dashoffset: 0;}
+    }
 
+    .aniPath1 {
+        fill: #fff; stroke: #dbdbdb; stroke-width: 2; stroke-linecap: round;
+        animation: path1 4s infinite linear alternate-reverse;
+        transform-origin: center center;
+        stroke-dasharray: 2000;
+    }
+    @keyframes path1 {
+        0% {stroke-dashoffset: 2000; transform: rotate(360deg);}
+        100% {stroke-dashoffset: 0; transform: rotate(0deg);}
+    }
+</style>
+<!-- Intro7 -->
+<div class="bs-docs-section">
+<h2 id="intro7" class="page-header">Animation</h2>      
+<div class="svgBox">
+    <svg class="svg">
+        <rect class="aniRect1" fill="none" width="100" height="100" x="30" y="30" />
+    </svg>
+    <svg class="svg">
+        <rect class="aniRect2" fill="none" width="100" height="100" x="30" y="30" />
+    </svg>
+    <svg class="svg">
+        <rect class="aniRect3" fill="none" width="100" height="100" x="30" y="30" />
+    </svg>
+    <svg class="svg">
+        <rect class="aniRect4" fill="none" width="100" height="100" x="30" y="30" />
+    </svg>
+</div>
+<div class="svgBox">
+    <svg class="svg">
+        <path class="aniPath1" d="M82.525,75.434c9.721,89.658-30.76,84.924-0.616-0.072
+        c-30.144,84.997-64.56,63.167-0.524-0.332c-64.036,63.5-85.574,28.899-0.327-0.527c-85.247,29.426-89.64-11.092-0.067-0.617
+        C-8.582,63.41,5.042,24.999,81.198,73.301c-76.156-48.302-47.217-76.998,0.44-0.437c-47.657-76.561-9.131-89.86,0.587-0.203
+        c-9.718-89.657,30.761-84.923,0.616,0.072c30.145-84.995,64.562-63.166,0.524,0.333c64.037-63.498,85.575-28.898,0.327,0.527
+        c85.248-29.425,89.64,11.093,0.067,0.617c89.572,10.476,75.95,48.888-0.208,0.585c76.158,48.303,47.218,77-0.44,0.437
+        C130.771,151.794,92.246,165.092,82.525,75.434z"/>
+    </svg>
+</div>
 
-            </div>
-            <!-- //col-md-9 -->
+<pre class="line-numbers language-css"><code>.aniRect1 {
+stroke: #880e4f; stroke-width: 18;
+transform-origin:center center ;
+animation: rect1 8s infinite ease-in-out;
+}
+@keyframes rect1 {
+0% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
+35% {stroke:#311b92; stroke-width: 1; transform: rotate(360deg);}
+70% {stroke:#004d40; stroke-width: 1; transform: rotate(360deg);}
+100% {stroke:#880e4f; stroke-width: 18; transform: rotate(0deg);}
+}
+.aniRect2 {
+stroke: #880e4f; stroke-width: 4;
+animation: rect2 4s infinite ease-in-out alternate;
+stroke-dasharray: 50;
+stroke-dashoffset: 50;
+stroke-linecap: round;
+}
+@keyframes rect2 {
+0% {stroke:#880e4f; stroke-dashoffset: 100; }
+35% {stroke:#311b92; }
+70% {stroke:#004d40; }
+100% {stroke:#880e4f; stroke-dashoffset: 0;}
+}
+.aniRect3 {
+stroke: #880e4f; stroke-width: 4;
+animation: rect3 4s infinite ease-in-out alternate;
+stroke-dasharray: 100;
+stroke-dashoffset: 100;
+stroke-linecap: round;
+}
+@keyframes rect3 {
+0% {stroke:#880e4f; stroke-dashoffset: 100; }
+35% {stroke:#311b92; }
+70% {stroke:#004d40; }
+100% {stroke:#880e4f; stroke-dashoffset: 0;}
+}
+.aniRect4 {
+stroke: #880e4f; stroke-width: 4;
+animation: rect4 2s infinite linear;
+stroke-dasharray: 400;
+stroke-dashoffset: 400;
+stroke-linecap: round;
+}
+@keyframes rect4 {
+0% {stroke:#880e4f; stroke-dashoffset: 400; }
+35% {stroke:#311b92; }
+70% {stroke:#004d40; }
+100% {stroke:#880e4f; stroke-dashoffset: 0;}
+}
+</code></pre>
+</div>
+<!-- //Intro7 -->
 
-
-            <!-- //col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro0">SVG</a></li>
-                        <li><a href="#intro1">rect</a></li>
-                        <li><a href="#intro2">circle</a></li>
-                        <li><a href="#intro3">polygon</a></li>
-                        <li><a href="#intro4">line,polyline</a></li>
-                        <li><a href="#intro5">Illustrator5</a></li>
-                        <li><a href="#intro6">Illustrator6</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--//col-md-3 -->
-        </div>
-        <!-- //row -->
+</div>
+<!-- //col-md-9 -->
     </div>
-    <!-- //container -->
+
+<!-- //col-md-3 -->
+<div class="col-md-3">
+<div class="bs-sidebar hidden-print" role="complementary">
+<ul class="nav bs-sidenav">
+    <li><a href="#intro0">SVG</a></li>
+    <li><a href="#intro1">rect(사각형)</a></li>
+    <li><a href="#intro2">circle(원형)</a></li>
+    <li><a href="#intro3">polygon(다각형)</a></li>
+    <li><a href="#intro4">line, polyline(선)</a></li>
+    <li><a href="#intro5">path</a></li>
+    <li><a href="#intro6">clip-path</a></li>
+    <li><a href="#intro7">Animation</a></li>
+</ul>
+</div>
+</div>
+<!--//col-md-3 -->
+</div>
+<!-- //row -->
+</div>
+<!-- //container -->
 
 
-    <!-- Footer -->
-    <footer class="bs-footer" role="contentinfo">
-        <div class="container">
-            <ul class="footer-links muted">
-                <li>Currently v2.0</li>
-                <li>&middot;</li>
-                <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
-                <li>&middot;</li>
-                <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
-                <li>&middot;</li>
-                <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
-            </ul>
-        </div>
-    </footer>
-    <!-- //Footer -->
+<!-- Footer -->
+<footer class="bs-footer" role="contentinfo">
+<div class="container">
+<ul class="footer-links muted">
+<li>Currently v2.0</li>
+<li>&middot;</li>
+<li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
+<li>&middot;</li>
+<li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
+<li>&middot;</li>
+<li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
+</ul>
+</div>
+</footer>
+<!-- //Footer -->
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../../assets/js/jquery-1.9.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <script src="../../assets/js/prism.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../../assets/js/jquery-1.9.1.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
+<script src="../../assets/js/prism.js"></script>
 </body>
 
 </html>

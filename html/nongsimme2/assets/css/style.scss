@@ -414,7 +414,7 @@ position: relative;}
 }
 
 .pl {padding-left: 20px;}
-.pl a { color: #999;  ;}
+.pl a { color: #999; font-size: 14px; position: absolute; left: 5%;top: 20%;}
 .tbl-page{
     padding-top: 40px;
 text-align: center;
@@ -426,4 +426,5 @@ border-radius: 50%;
 .page_num a{display: inline-block;
 width: 54px;height: 54px; font-size: 30px; text-align: center; }
 .nav ul li {position: relative; }
-.nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); }
+.nav ul li a::after {transition: all 0.5s }
+.nav ul li a.on::after {content: '';width: 60px;height: 5px;position: absolute;left: 20%;top: -90%;background: #ca0202; translate: (-50%,-50%); transition: all 0.5s;}

@@ -677,6 +677,10 @@
 
 .pl a {
   color: #999;
+  font-size: 14px;
+  position: absolute;
+  left: 5%;
+  top: 20%;
 }
 
 .tbl-page {
@@ -706,6 +710,11 @@
   position: relative;
 }
 
+.nav ul li a::after {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .nav ul li a.on::after {
   content: '';
   width: 60px;
@@ -715,5 +724,7 @@
   top: -90%;
   background: #ca0202;
   translate: -50%, -50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
