@@ -128,6 +128,8 @@
 .swiper-container {
     width: 100%;
     height: 100%;
+    display : block;
+    
   }
   .swiper-slide {
     text-align: center;
@@ -156,13 +158,13 @@ background: #1D326C;
 h2{
    
     text-align: left;
-    font-size: 30px;
+    font-size: 1.8em;
     color: #fff;
     padding-top: 15vh;
     line-height: 1.1em;
     font-weight: bold;
     padding-left: 12vw;
-    height: 100px;
+    height: 10vh;
     
     em{
   font-size: 125px;
@@ -196,7 +198,7 @@ a {color: #fff; border: 1px solid #fff; margin: 10px; display: inline-block;padd
 }
 }
   .factory_img img {width: 100vh;height: 40vh;
-position: absolute; right: 0%; top: 91.8%; }
+position: absolute; right: 0%; top: 92.5%; }
 
 
 
@@ -211,7 +213,7 @@ width: 100%;
 
     h2{
         color: #000; text-align: center;
-        height: 98px; font-size: 42px; font-family: "Nunito Sans"; font-weight: 100;
+        height: 9vh; font-size: 42px; font-family: "Nunito Sans"; font-weight: 100;
         padding-top: 10vh;
         em{
             color: #243c86;
@@ -313,3 +315,5 @@ position: relative;
 100%{transform:translateY(2px);}
 
 }
+
+

@@ -170,6 +170,7 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .swiper-slide {
@@ -194,13 +195,13 @@
 
 .dream_factory .dream h2 {
   text-align: left;
-  font-size: 30px;
+  font-size: 1.8em;
   color: #fff;
   padding-top: 15vh;
   line-height: 1.1em;
   font-weight: bold;
   padding-left: 12vw;
-  height: 100px;
+  height: 10vh;
 }
 
 .dream_factory .dream h2 em {
@@ -250,7 +251,7 @@
   height: 40vh;
   position: absolute;
   right: 0%;
-  top: 91.8%;
+  top: 92.5%;
 }
 
 #main-ani {
@@ -262,7 +263,7 @@
 .ani h2 {
   color: #000;
   text-align: center;
-  height: 98px;
+  height: 9vh;
   font-size: 42px;
   font-family: "Nunito Sans";
   font-weight: 100;
