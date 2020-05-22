@@ -383,37 +383,37 @@ h3 {
 }
 
 .aniimg img {
-  -webkit-animation: animatedbang 2s infinite alternate;
-          animation: animatedbang 2s infinite alternate;
+  -webkit-animation: seungkyu 1s infinite alternate;
+          animation: seungkyu 1s infinite alternate;
 }
 
-@-webkit-keyframes animatedbang {
+@-webkit-keyframes seungkyu {
   0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
   100% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }
 
-@keyframes animatedbang {
+@keyframes seungkyu {
   0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
   100% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
   }
 }
 /*# sourceMappingURL=style.css.map */
