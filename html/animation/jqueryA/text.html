@@ -1,0 +1,17 @@
+$(".btn11").click(function(){
+
+    $(".circle11 > div")
+    loop()
+})
+    function out(){
+    $(".circle11 > div").hide()
+    }
+    function loop(){
+    $(".circle11 > div")
+    .animate({left: cc},500,"easeOutQuint")
+    .animate({top: ff},500,"easeOutQuint")
+    .animate({left: "0%"},500,"easeOutQuint")
+    .animate({top: "0%"},500,"easeOutQuint",loop)
+
+    setTimeout(out, 10000);   
+}

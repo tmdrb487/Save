@@ -1,0 +1,61 @@
+.header.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header.container .header.top {
+  height: 300px;
+}
+
+.header.container .header.top .header.left {
+  position: relative;
+}
+
+.header.container .header.top .header.left .headerlef1 {
+  float: left;
+  padding: 20px;
+}
+
+.header.container .header.top .header.left .headerlef1 ul li {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.header.container .header.top .header.left .headerlef1 ul li a span {
+  font-size: 13px;
+  color: #1D326C;
+}
+
+.header.container .header.top .header.left .headerrig1 {
+  float: right;
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head11 {
+  display: inline-block;
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head11 li {
+  padding: 20px 30px;
+  display: inline-block;
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head11 li a {
+  font-size: 13px;
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head22 span .ediya1 {
+  background-image: url(../img/common/top_sns01.gif);
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head22 span .ediya2 {
+  background-image: url(../img/common/top_sns02.gif);
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head22 span .ediya3 {
+  background-image: url(../img/common/top_sns03.gif);
+}
+
+.header.container .header.top .header.left .headerrig1 ul.head22 span .ediya4 {
+  background-image: url(../img/common/top_sns04.gif);
+}
+/*# sourceMappingURL=style.css.map */

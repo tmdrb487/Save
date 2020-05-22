@@ -1,0 +1,57 @@
+// 레이아웃
+.header.container{
+    width: 1200px; margin: 0 auto;
+
+    .header.top{
+        height: 300px;
+        .header.left{
+            position: relative;
+
+            .headerlef1{
+                float: left;
+                padding: 20px;
+                ul {
+                    
+                    li{
+                        margin-left: 20px;
+                        display: inline-block;
+                        a{
+                           span{
+                            font-size: 13px;  
+                               color: #1D326C;
+                           }
+                        }
+                    }
+                }
+
+            }
+            .headerrig1{
+              float: right;
+              
+                ul.head11 {
+                    display: inline-block;
+                    
+                    li{
+                        
+                        padding: 20px 30px;
+                        display: inline-block;
+                        
+                        a{
+                            font-size: 13px;  
+                        }
+
+
+                    }
+                }
+                ul.head22 span{
+                    
+                    .ediya1 {background-image: url(../img/common/top_sns01.gif) }
+                    .ediya2 {background-image: url(../img/common/top_sns02.gif) }
+                    .ediya3 {background-image: url(../img/common/top_sns03.gif) }
+                    .ediya4 {background-image: url(../img/common/top_sns04.gif) }
+                }
+            }
+        }
+    
+    }
+}

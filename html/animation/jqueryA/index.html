@@ -316,22 +316,7 @@
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h4 class="btn2"&gt;animation
-    &lt;button&gt;Start&lt;/button&gt;
-    &lt;button&gt;easeInCubic&lt;/button&gt;
-    &lt;button&gt;easeOutElastic&lt;/button&gt;
-    &lt;button&gt;easeInBounce&lt;/button&gt;
-    &lt;button&gt;easeInOutSine&lt;/button&gt;
-    &lt;button&gt;easeInBounce&lt;/button&gt;
-&lt;/h4&gt;
-
-&lt;div class="well"&gt;
-    &lt;div class="box"&gt;
-        &lt;div class="circle circle2"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
+<pre class="line-numbers language-css"><code>
 $(".btn2 &gt; button").click(function(){
     let aa = $(".box").width();
     let bb = $(".circle").width();
@@ -374,22 +359,8 @@ $(".btn2 &gt; button").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h4 class="btn3"&gt;animation
-    &lt;button&gt;Start&lt;/button&gt;
-    &lt;button&gt;delay&lt;/button&gt;
-&lt;/h4&gt;
-&lt;div class="well"&gt;
-    &lt;div class="box circle5"&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-$(".circle5 &gt; div").css({"position":"relative","margin-bottom":"30px"})
-        
-let ease = "easeOutElastic";
+<pre class="line-numbers language-css"><code>$(".circle5 &gt; div").css({"position":"relative","margin-bottom":"30px"})
+        let ease = "easeOutElastic";
 
 $(".btn3").click(function(){
     $(".circle5 &gt; div").eq(0).delay(100).animate({left: cc},1000,ease).animate({left: 0},1000)
@@ -413,18 +384,7 @@ $(".btn3").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h4 class="btn6"&gt;animation
-    &lt;button&gt;Start&lt;/button&gt;
-&lt;/h4&gt;
-&lt;div class="well"&gt;
-    &lt;div class="box circle6"&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-$(".circle6").css("height","2200px")
+<pre class="line-numbers language-css"><code>$(".circle6").css("height","2200px")
 $(".circle6 &gt; div").css({"position":"relative","margin-bottom":"30px"})
 
 $(".btn6").click(function(){
@@ -464,20 +424,7 @@ $(".btn6").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h2 id="intro7" class="page-header"&gt;click&lt;/h2&gt;
-&lt;h4 class="btn7"&gt;animation
-    &lt;button class="btn7-1"&gt;right&lt;/button&gt;
-    &lt;button class="btn7-2"&gt;left&lt;/button&gt;
-    &lt;button class="btn7-3"&gt;top&lt;/button&gt;
-    &lt;button class="btn7-4"&gt;bottom&lt;/button&gt;
-&lt;/h4&gt;
-&lt;div class="well"&gt;
-    &lt;div class="box circle7"&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-$(".btn7-1").click(function(){
+<pre class="line-numbers language-css"><code>$(".btn7-1").click(function(){
     $(".circle7 &gt; div").animate({ left: "+=100"}, "slow","easeOutQuint")
 })
 $(".btn7-2").click(function(){
@@ -503,17 +450,7 @@ $(".btn7-4").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h2 id="intro8" class="page-header"&gt;무한 반복&lt;/h2&gt;
-    &lt;h4 class="btn8"&gt;animation
-        &lt;button class="btn8"&gt;right&lt;/button&gt;
-    &lt;/h4&gt;
-    &lt;div class="well"&gt;
-        &lt;div class="box circle8"&gt;
-            &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    $(".btn8 &gt; button").click(function(){
+<pre class="line-numbers language-css"><code>$(".btn8 &gt; button").click(function(){
         loop()
     })
     
@@ -541,18 +478,7 @@ $(".btn7-4").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h2 id="intro9" class="page-header"
-    &gt;일정한 간격으로 움직이기&lt;/h2&gt;
-    &lt;h4 class="btn9"&gt;animation
-        &lt;button class="btn9"&gt;right&lt;/button&gt;
-    &lt;/h4&gt;
-    &lt;div class="well"&gt;
-        &lt;div class="box circle9"&gt;
-            &lt;div class="circle"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    $(".btn9").click(function(){
+<pre class="line-numbers language-css"><code>$(".btn9").click(function(){
         setInterval(time, 5000)
     })
     function time(){
@@ -575,18 +501,7 @@ $(".btn7-4").click(function(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>&lt;h2 id="intro10" class="page-header"
-    &gt;사라지는 애니메이션&lt;/h2&gt;
-&lt;h4 class="btn10"&gt;animation
-    &lt;button class="btn10"&gt;right&lt;/button&gt;
-&lt;/h4&gt;
-&lt;div class="well"&gt;
-    &lt;div class="box circle10"&gt;
-        &lt;div class="circle"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-$(".btn10").click(function(){
+<pre class="line-numbers language-css"><code>$(".btn10").click(function(){
     $(".circle10 &gt; div")
     .animate({left: cc},1000,"easeOutQuint")
     .animate({left: 0},1000,"easeOutQuint");
@@ -612,9 +527,52 @@ function out(){
                         </div>
                     </div>
                 </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>$(".btn11").click(function(){
+
+        $(".circle11 > div")
+        loop()
+    })
+        function out(){
+        $(".circle11 > div").hide()
+        }
+        function loop(){
+        $(".circle11 > div")
+        .animate({left: cc},500,"easeOutQuint")
+        .animate({top: ff},500,"easeOutQuint")
+        .animate({left: "0%"},500,"easeOutQuint")
+        .animate({top: "0%"},500,"easeOutQuint",loop)
+    
+        setTimeout(out, 10000);   
+    }
 </code></pre>                
-                <!-- //Intro11 -->                 
+                <!-- //Intro11 -->
+                
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">창작</h2>
+                    <h4 class="btn12">animation
+                        <button class="btn12">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle12">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+<pre class="line-numbers language-css"><code>$(".btn12").click(function(){
+        function loop(){
+        $(".circle12 > div")
+        .animate({left: cc},1000,"easeOutQuint")
+        .animate({left: 0},1000,"easeOutQuint",loop);
+    }
+    function out(){
+        $(".circle12 > div").hide()
+    }
+    loop();
+    setTimeout(out, 5000); 
+    })
+</code></pre>                
+                <!-- //Intro12 -->                  
 
 
             </div>
@@ -835,24 +793,13 @@ function out(){
 
         //11번 속성 애니메이션 ( 2바퀴) --> 무한으로 움직이기 >> 10분뒤에 사라지게
         $(".btn11").click(function(){
-            let aa = $(".box").width();
-            let bb = $(".circle").width();
-
-            let cc =(aa)-(bb)
-
-            let dd = $(".box").height();
-            let ee = $(".circle").height();
-            
-
-            let ff =(dd)-(ee)
 
             $(".circle11 > div")
-            // .animate({left: cc},500,"easeOutQuint")
-            // .animate({top: ff},500,"easeOutQuint")
-            // .animate({left: cc},500,"easeOutQuint")
-            // .animate({left: ff},500,"easeOutQuint")
             loop()
         })
+            function out(){
+            $(".circle11 > div").hide()
+            }
             function loop(){
             $(".circle11 > div")
             .animate({left: cc},500,"easeOutQuint")
@@ -861,29 +808,25 @@ function out(){
             .animate({top: "0%"},500,"easeOutQuint",loop)
 
             setTimeout(out, 10000);   
-
-            function out(){
-            $(".circle11 > div").hide()
-            }
-            // .animate({left: cc},500,"easeOutQuint")
-            // .animate({top: ff},500,"easeOutQuint",loop)
-            // .animate({left: cc},500,"easeOutQuint")
-            // .animate({top: ff},500,"easeOutQuint",loop)
-
         }
 
 
-        
-        // $(".circle11 > div")
-        //     .animate({left: cc},1000,"easeOutQuint")
-        //     .animate({left: 0},1000,"easeOutQuint");
+        // 12번 숙제
+        $(".btn12").click(function(){
+        function loop(){
+        $(".circle12 > div")
+        .animate({left: cc},1000,"easeOutQuint")
+        .animate({left: 0},1000,"easeOutQuint",loop);
+        }
+        function out(){
+            $(".circle12 > div").hide()
+        }
+        loop();
+        setTimeout(out, 5000); 
+        })
 
-        //  setTimeout(out, 2000);   
-
-        //  function out(){
-        //     $(".circle11 > div").hide()
-        // }
         
+
     </script>
 </body>
 
