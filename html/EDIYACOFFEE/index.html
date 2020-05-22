@@ -24,13 +24,19 @@
         <script src="/js/swiper.jquery.js"></script>
         <script src="/js/viewportchecker.js"></script> -->
         
+        <!-- 폰트어썸 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <!-- 파비콘 -->
 
-
+        <!-- 폰트 -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700;800;900&display=swap" rel="stylesheet">
         <!-- style -->
             <link rel="stylesheet" href="assets/css/reset.css">
             <link rel="stylesheet" href="assets/css/style.css">
 
+              <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         
 <!-- 
                 // mode: 'horizontal',// 가로 방향 수평 슬라이드 ‘horizontal’ ‘horizontal’‘vertical’‘fade’ 슬라이드 이동 방향 설정
@@ -63,23 +69,185 @@
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">회원가입</a></li>
                         <li><a href="#">매장찾기</a></li>
-                    </ul>  
-                    <ul class="head22">
-                        
-                        <li><a href="#" class="ediya1"><span></span></a></li>
-                        <li><a href="#" class="ediya2"><span></span></a></li>
-                        <li><a href="#" class="ediya3"><span></span></a></li>
-                        <li><a href="#" class="ediya4"><span></span></a></li>
                     </ul>
+                    <ul class="head22">
+                        <li><a href="#" ><span class="ediyai"></span><img src="assets/img/common/top_sns01.gif" alt="#"></a></li>
+                        <li><a href="#" ><span class="ediyai"></span><img src="assets/img/common/top_sns02.gif" alt="#"></a></li>
+                        <li><a href="#" ><span class="ediyai"></span><img src="assets/img/common/top_sns03.gif" alt="#"></a></li>
+                        <li><a href="#" ><span class="ediyai"></span><img src="assets/img/common/top_sns04.gif" alt="#"></a></li>
+                    </ul>
+                    <div class="language_tab" id="lang_select"><i class="fas fa-angle-down"></i><a href="#c" onclick="select_lang()">Korean</a>
+                        <!-- Language 리스트 -->
+                      <ul style="display:none;" class="lang_list">
+                          <li><a href="#c" onclick="ch_lang('')">Korean</a></li>
+                          <li><a href="#c" onclick="ch_lang('eng')">English</a></li>
+                          <li><a href="#c" onclick="ch_lang('chi')">Chinese</a></li>
+                      </ul>
+                    </div>
                 </div>  
             </div>
             <div class="header right"></div>
         </div>
         <div class="header bottom">
-            <div class="header left"></div>
-            <div class="header right"></div>
+            <div class="header leftr">
+                <h2><img src="assets/img/common/top_logo.gif" alt="로고"></h2>
+            </div>
+            <div class="header right">
+                <nav class="herigth">
+                    <ul>
+                      <li class="sub-menu">
+                        <a href="#">메뉴
+                        </a>
+                        <ul>
+                          <li><a href="#">음료</a></li>
+                          <li><a href="#">베이커리</a></li>
+                          <li><a href="#">이디야 스낵</a></li>
+                          <li><a href="#">MD</a></li>
+                          <li><a href="#">비니스트</a></li>
+                          <li><a href="#">원두</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#">이디야멤버스
+                        </a>
+                        <ul>
+                          <li><a href="#">멤버스 소개</a></li>
+                          <li><a href="#">이디야카드</a></li>
+                          <li><a href="#">선물하기</a></li>
+                          <li><a href="#">이디야오더</a></li>
+                          <li><a href="#">FAQ</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#">이디야커피랩
+
+                        </a>
+                        <ul>
+                          <li><a href="#">이디야커피랩</a></li>
+                          <li><a href="#">이디야커피랩 메뉴</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#">이디야컬쳐랩
+
+                        </a>
+                        <ul>
+                          <li><a href="#">뮤직페스타</a></li>
+                          <li><a href="#">프로그램 및 시설안내</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#">이디야소식
+                        </a>
+                        <ul>
+                          <li><a href="#">공지사항</a></li>
+                          <li><a href="#">이벤트</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
         </div>
     </div>
     </div>
+
+                <!-- banner -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1584667042183.jpg" alt="이미지1"></div>
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1585626444525.jpg" alt="이미지1"></div>
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1589162340167.jpg" alt="이미지1"></div>
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1589861662342.jpg" alt="이미지1"></div>
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1590048077684.jpg" alt="이미지1"></div>
+                        <div class="swiper-slide"><img src="assets/img/banner/IMG_1590051001652.jpg" alt="이미지1"></div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+<div class="dream_factory">
+  	<div class="dream">
+    	<h2><em>DREAM FACTORY</em>EDIYA COFFEE</h2>
+      <p>최첨단 시설에서 탄생하는 고품질의 원두를 <span>철저한 물류관리시스템으로 안정적으로 제공합니다.</span></p>
+      <div class="dream ab1">
+      	<a href="#">드림 팩토리</a>
+        <a href="#">드림 물류센터</a>
+      </div>
+  	</div>
+  	<div class="factory_img"><img src="assets/img/main/main/dream_factory.png" alt="드팩"></div>
+  </div>
+
+  <div id="main-ani">
+      <div class="ani">
+          <h2>ALWAYS BESIDE YOU,<em><em> EDIYA COFFEE</em></em></h2>
+          <h3>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</h3>
+          <div class="ani btn1"> <a href="#">메뉴보기</a></div>
+          <div class="aniimg">
+              <ul class="img-left">
+                  <li><img src="assets/img/main/main_ani/ani_object01.png" alt="이디" class="object object1-1"></li>
+                  <li><img src="assets/img/main/main_ani/ani_object01_01.png" alt="야커" class="object object1-2"></li>
+                  <li><img src="assets/img/main/main_ani/ani_object01_02.png" alt="피좀" class="object object1-3"></li>
+              </ul>
+              <ul class="img-right">
+                  <li><img src="assets/img/main/main_ani/ani_object02.png" alt="주려" class="object object2-1"></li>
+                  <li><img src="assets/img/main/main_ani/ani_object02_01.png" alt="무나" class="object object2-2"></li>
+                  <li><img src="assets/img/main/main_ani/ani_object02_02.png" alt="하핳" class="object object2-3"></li>
+                  <li><img src="assets/img/main/main_ani/ani_object02_03.png" alt="푸킥" class="object object2-4"></li>
+                </ul>
+          </div>
+      </div>
+  </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    
+    <script>
+$(".sub-menu ul").hide();
+
+$(".sub-menu a").click(function(){
+  // $(this).parent(".sub-menu").children("ul").show();
+  $(this).next("ul").slideToggle(300);
+  $(this).find(".fas").toggleClass("fa-caret-down fa-caret-up")
+})
+
+
+
+$(".sub-menu").hover(function(){
+    $(".sub-menu > ul").slideToggle(300)
+})
+    </script>
+
+
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+$(document).ready(function() {
+           $(".img-left img").animate({
+               top: '-=100px'
+           }, 2000);
+       });
+  </script>
 </body>
 </html>
