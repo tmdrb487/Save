@@ -104,7 +104,12 @@
         width: 202px; height: 20px;
     }
 }
-.header.bottom { width: 100%; display: flex;justify-content: space-between; height: 80px;}
+.header.bottom { width: 100%; display: flex;justify-content: space-between; height: 80px;
+    background: #fff;
+    // z-index: 1000;
+    // position: fixed; left: 0; top:0;
+    // width: 100%;
+}
 
 .herigth ul li a { 
     display:block;
