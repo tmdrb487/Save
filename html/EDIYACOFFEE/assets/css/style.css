@@ -176,6 +176,10 @@
   align-items: center;
 }
 
+.dream_factory {
+  position: relative;
+}
+
 .dream_factory .dream {
   position: relative;
   height: 56.5vh;
@@ -291,7 +295,7 @@
   height: 40vh;
   position: absolute;
   right: 0%;
-  top: 92.5%;
+  top: 29.2%;
 }
 
 #main-ani {
@@ -492,8 +496,8 @@ h3 {
 .herigth ul li a:hover::before {
   content: '';
   position: absolute;
-  right: 30%;
-  bottom: 10%;
+  right: 25%;
+  bottom: 0%;
   width: 5vw;
   height: 2px;
   background: #111;
@@ -852,8 +856,15 @@ h3 {
   background: #fff;
 }
 
-.const3-img2 a span::after:hover {
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+.const3-img2:hover::after {
+  content: '';
+  width: 8vw;
+  height: 80px;
+  position: absolute;
+  right: -11%;
+  top: 50%;
+  background: #000;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
 }
 /*# sourceMappingURL=style.css.map */
