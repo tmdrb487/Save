@@ -300,7 +300,7 @@
 
                 <!-- Intro4 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro4" class="page-header">timing-function</h2>
+                    <h2 id="intro4" class="page-header">Square Animation</h2>
                     <h4 class="btn2">animation
                         <button>Start</button>
                         <button>easeInCubic</button>
@@ -586,7 +586,7 @@ function out(){
                         <li><a href="#intro1">Jquery Animation</a></li>
                         <li><a href="#intro2">Animation</a></li>
                         <li><a href="#intro3">Animation</a></li>
-                        <li><a href="#intro4">timing-function</a></li>
+                        <li><a href="#intro4">Square Animation</a></li>
                         <li><a href="#intro5">delay</a></li>
                         <li><a href="#intro6">width</a></li>
                         <li><a href="#intro7">click</a></li>
@@ -688,13 +688,15 @@ function out(){
             let ff =(dd)-(ee)
 
 
-            let easing = $(this).text()
+            let easing = $(this).text();
 
             $(".circle2")
             .animate( {left:cc},1000, easing)
             .animate( {top:ff },1000, easing)
             .animate( {left:"0%" },1000, easing)
             .animate( {top:"0%" },1000, easing);
+
+
 
             
         })
