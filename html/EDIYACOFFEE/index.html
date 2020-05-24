@@ -38,18 +38,7 @@
               <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         
-<!-- 
-                // mode: 'horizontal',// 가로 방향 수평 슬라이드 ‘horizontal’ ‘horizontal’‘vertical’‘fade’ 슬라이드 이동 방향 설정
-                // speed: 500,        // 이동 속도를 설정
-                // adaptiveHeight: true,
-                // pager: true,      // 현재 위치 페이징 표시 여부 설정
-                // moveSlides: 1,     // 슬라이드 이동시 개수
-                // minSlides: 1,      // 최소 노출 개수
-                // maxSlides: 1,      // 최대 노출 개수
-                // slideMargin: 0,    // 슬라이드간의 간격
-                // auto: true,        // 자동 실행 여부
-                // autoHover: true,   // 마우스 호버시 정지 여부
-                // controls: true    // 이전 다음 버튼 노출 여부 -->
+
 
  </head>
 <body>
@@ -146,6 +135,7 @@
                       </li>
                     </ul>
                   </nav>
+                  
             </div>
         </div>
     </div>
@@ -171,7 +161,7 @@
                 
 <div class="dream_factory">
   	<div class="dream">
-    	<h2><em>DREAM FACTORY</em>EDIYA COFFEE</h2>
+    	<h2><text>DREAM FACTORY</text>EDIYA COFFEE</h2>
       <p>최첨단 시설에서 탄생하는 고품질의 원두를 <span>철저한 물류관리시스템으로 안정적으로 제공합니다.</span></p>
       <div class="dream ab1">
       	<a href="#">드림 팩토리</a>
@@ -202,25 +192,44 @@
       </div>
   </div>
 
+  <div class="company">
+    <ul class="com img">
+    <h2>고객과 가맹점주, 협력사의 상생의 가치를 실천합니다.</h2><BR>
+    <h4>해외에 로열티를 내지 않는 순수한 국내브랜드로 품질좋고 맛있는 정직한 커피를 제공합니다.</h4>
+      <ul>
+        <li><a href="#">가맹안내</a></li>
+        <li><a href="#">브랜드소개</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="conts2">
+    <div class="contsimg">
+      <div class="iimg"></div>
+      <h2 class="consth2">EDIYA <em>CULTURE LAB</em></h2>
+      <h4 class="consth4">커피를 더 특별하게 만드는 문화가 시작되는 공간</h4>
+      <div class="constbb"></div>
+      <ul class="constrr">
+        <li><a href="#"><span>이디야</span> 뮤직 페스타</a></li>
+        <li><a href="#"><span>컬쳐랩</span> 시설대관</a> </li>
+        <li><a href="#"><span>이디야</span> 컬쳐랩</a> </li>
+      </ul>
+    </div>
+  </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     
     <script>
+//서브메뉴를  숨기세요!
 $(".sub-menu ul").hide();
-
-$(".sub-menu a").click(function(){
-  // $(this).parent(".sub-menu").children("ul").show();
-  $(this).next("ul").slideToggle(300);
-  $(this).find(".fas").toggleClass("fa-caret-down fa-caret-up")
-})
-
-
-
-$(".sub-menu").hover(function(){
-    $(".sub-menu > ul").slideToggle(300)
-})
+$(".sub-menu a").hover(function(){
+    // $(this).parent(".sub-menu").siblings().children("ul").slideToggle();
+    $(".sub-menu ul").slideToggle(300);
+    // $(".header.bottom").toggleClass("on")
+});
     </script>
 
 
@@ -256,6 +265,10 @@ $(".sub-menu").hover(function(){
     
   </script>
 
-
+<script>
+  (window).scroll(function(){
+    $(".header.bottom").addClass("on")
+  })
+</script>
 </body>
 </html>
