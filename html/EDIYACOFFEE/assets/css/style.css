@@ -1,10 +1,7 @@
 @charset "UTF-8";
-.header.container {
+.header.container .header.top {
   width: 1200px;
   margin: 0 auto;
-}
-
-.header.container .header.top {
   height: 80px;
 }
 
@@ -133,6 +130,7 @@
   width: 202px;
   height: 20px;
   padding-top: 10px;
+  padding-left: 13.5vw;
   display: inline-block;
 }
 
@@ -146,12 +144,6 @@
           justify-content: space-between;
   height: 55px;
   background: #fff;
-}
-
-.header.bottom.on {
-  position: fixed;
-  right: 0;
-  top: 100%;
 }
 
 .sub-menu ul {
@@ -367,12 +359,12 @@ h3 {
 }
 
 .img-left {
-  height: 100%;
+  height: 300px;
   position: relative;
 }
 
 .img-right {
-  height: 100%;
+  height: 600px;
   position: relative;
 }
 
@@ -381,7 +373,7 @@ h3 {
   height: 350px;
   position: absolute;
   right: 64.5%;
-  top: -70px;
+  top: -25%;
 }
 
 .img-left li:nth-child(2) {
@@ -389,7 +381,7 @@ h3 {
   height: 110px;
   position: absolute;
   right: 89%;
-  top: -330px;
+  top: -105%;
 }
 
 .img-left li:nth-child(3) {
@@ -397,7 +389,7 @@ h3 {
   height: 62px;
   position: absolute;
   right: 84%;
-  top: -230px;
+  top: -70%;
 }
 
 .aniimg {
@@ -409,7 +401,7 @@ h3 {
   height: 628px;
   position: absolute;
   right: -15.5%;
-  top: -200px;
+  top: -80%;
 }
 
 .img-right li:nth-child(2) {
@@ -417,7 +409,7 @@ h3 {
   height: 90px;
   position: absolute;
   right: 16%;
-  top: -328px;
+  top: -100%;
 }
 
 .img-right li:nth-child(3) {
@@ -425,7 +417,7 @@ h3 {
   height: 77px;
   position: absolute;
   right: 7%;
-  top: -200px;
+  top: -80%;
 }
 
 .img-right li:nth-child(4) {
@@ -433,7 +425,7 @@ h3 {
   height: 77px;
   position: absolute;
   right: 1%;
-  top: -180px;
+  top: -85%;
 }
 
 .aniimg img {
@@ -631,6 +623,17 @@ h3 {
   display: block;
   text-align: center;
   font-weight: 100;
+  position: relative;
+}
+
+.conts2 h4::before {
+  content: '';
+  width: 6vw;
+  height: 1px;
+  background: #1f76E4;
+  position: absolute;
+  right: 47%;
+  top: 220%;
 }
 
 .constbb {
@@ -639,33 +642,210 @@ h3 {
   z-index: -10;
 }
 
-.constrr li {
-  display: inline-block;
+.main_block03_con {
+  margin-top: 106px;
+  position: relative;
+  height: 400px;
 }
 
-.constrr li a {
+.main_block03_con li a {
+  font-size: 18px;
+  padding-top: 121px;
   color: #fff;
 }
 
-.constrr li:nth-child(1) a {
+.main_block03_con li a span {
+  display: inline;
+}
+
+.main_block03_con li:nth-child(1) a {
+  background: url(../img/main/main/block03_icon01.png) no-repeat center top;
+}
+
+.main_block03_con li:nth-child(2) a {
+  background: url(../img/main/main/block03_icon02.png) no-repeat center top;
+}
+
+.main_block03_con li:nth-child(3) a {
+  background: url(../img/main/main/block03_icon03.png) no-repeat center top;
+}
+
+.main_block03_con li:nth-child(1) {
+  position: absolute;
+  right: 65%;
+  top: 70%;
+}
+
+.main_block03_con li:nth-child(2) {
+  position: absolute;
+  right: 46%;
+  top: 50%;
+}
+
+.main_block03_con li:nth-child(3) {
+  position: absolute;
+  right: 27.5%;
+  top: 70%;
+}
+
+.main_block03_con li {
+  -webkit-animation: seungkyu1 1s infinite alternate;
+          animation: seungkyu1 1s infinite alternate;
+}
+
+@-webkit-keyframes seungkyu1 {
+  0% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+
+@keyframes seungkyu1 {
+  0% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+
+.header.bottom.on {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.conts3 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 550px;
+  position: relative;
+}
+
+.conts3 h2 {
+  color: #3c3c3c;
+  font-size: 42px;
+  display: block;
   text-align: center;
-  width: 324px;
-  height: 145px;
-  display: block;
-  background: url(../img/main/main/block03_icon01.png) no-repeat center;
+  font-family: "Nunito Sans";
+  padding-top: 6%;
+  line-height: 1.2;
 }
 
-.constrr li:nth-child(2) a {
-  width: 324px;
-  height: 145px;
-  display: block;
-  background: url(../img/main/main/block03_icon01.png) no-repeat center;
+.conts3 h2 em {
+  font-weight: 900;
+  font-family: "Nunito Sans";
 }
 
-.constrr li:nth-child(3) a {
-  width: 324px;
-  height: 145px;
+.conts3 h4 {
+  font-family: "나눔스퀘어";
+  color: #3c3c3c;
+  font-size: 24px;
   display: block;
-  background: url(../img/main/main/block03_icon01.png) no-repeat center;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+}
+
+.conts3 h4::before {
+  content: '';
+  width: 6vw;
+  height: 1px;
+  background: #3c3c3c;
+  position: absolute;
+  right: 47%;
+  top: 220%;
+}
+
+.const3-img {
+  height: 500px;
+}
+
+.const3-img1 {
+  background: url(../img/main/main/block05_img02.jpg) no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  width: 38vw;
+  position: absolute;
+  right: 45%;
+  top: 50%;
+  z-index: 10;
+}
+
+.const3-img1 li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito Sans";
+  text-align: center;
+  padding-top: 58vh;
+  letter-spacing: 3.2px;
+}
+
+.const3-img1 li a {
+  color: #fff;
+}
+
+.const3-img1 li::after {
+  content: '';
+  width: 8vw;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  right: 40%;
+  top: 90%;
+}
+
+.const3-img2 {
+  background: url(../img/main/main/block05_img01.jpg) no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  width: 38vw;
+  position: absolute;
+  right: -3%;
+  bottom: -77%;
+}
+
+.const3-img2 li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito Sans";
+  text-align: center;
+  letter-spacing: 3.2px;
+  padding-top: 58vh;
+}
+
+.const3-img2 li a {
+  color: #fff;
+}
+
+.const3-img2 li::after {
+  content: '';
+  width: 8vw;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  right: 40%;
+  top: 90%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

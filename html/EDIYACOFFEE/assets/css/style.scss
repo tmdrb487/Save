@@ -1,8 +1,9 @@
 // 레이아웃
 .header.container{
     
-    width: 1200px; margin: 0 auto; 
+    // width: 1200px; margin: 0 auto; 
     .header.top{
+        width: 1200px; margin: 0 auto; 
         height: 80px;
         .header.left{
             position: relative;
@@ -103,18 +104,18 @@
     img { 
         width: 202px; height: 20px;
         padding-top: 10px;
+        padding-left: 13.5vw;
         display: inline-block;
     }
 }
+
 .header.bottom { width: 100%; display: flex;justify-content: space-between; height: 55px;
     background: #fff;
     // z-index: 1000;
     // position: fixed; left: 0; top:0;
     // width: 100%;
 }
-.header.bottom.on{
-    position: fixed; right: 0; top: 100%;
-}
+
 // .herigth ul li a { 
 //     display:block;
 //     color: #000;
@@ -279,12 +280,12 @@ font-family: "나눔스퀘어";}
 
 
 .img-left{
-height: 100%;
+height: 300px;
  position: relative;
 }
 
 .img-right{
-    height: 100%;
+    height: 600px;
 position: relative;
  
 }
@@ -292,35 +293,35 @@ position: relative;
 
 .img-left li:nth-child(1){
     width: 21vw;height: 350px;
-    position: absolute; right: 64.5%; top: -70px;
+    position: absolute; right: 64.5%; top: -25%;
 }
 
 .img-left li:nth-child(2){
     width: 6.5vw;height: 110px;
-    position: absolute; right: 89%; top: -330px;
+    position: absolute; right: 89%; top: -105%
 }
 
 .img-left li:nth-child(3){
     width: 4.5vw;height: 62px;
-    position: absolute; right: 84%; top: -230px;
+    position: absolute; right: 84%; top: -70%
 }
 .aniimg{position: relative;}
 
 .img-right li:nth-child(1){
     width: 47vw;height: 628px;
-    position: absolute; right: -15.5%; top:-200px;
+    position: absolute; right: -15.5%; top:-80%
 }
 .img-right li:nth-child(2){
     width: 5vw;height: 90px;
-    position: absolute; right: 16%; top: -328px;
+    position: absolute; right: 16%; top: -100%
 }
 .img-right li:nth-child(3){
     width: 4.5vw;height: 77px;
-    position: absolute; right: 7%; top: -200px;
+    position: absolute; right: 7%; top: -80%;
 }
 .img-right li:nth-child(4){
     width: 4vw;height: 77px;
-    position: absolute; right: 1%; top: -180px;
+    position: absolute; right: 1%; top: -85%;
 }
 .aniimg img {
     animation:seungkyu 1s infinite alternate;
@@ -485,30 +486,157 @@ position: relative;
         display: block;
         text-align: center;
         font-weight: 100;
+        position: relative;
+
+
+        &::before{
+            content: '';
+            width:6vw;height: 1px;
+            background: #1f76E4;
+            position: absolute; right: 47%;top: 220%;
+        }
     }
 }
 .constbb { background: url(../img/main/main/block03_line.png) no-repeat center;
 height: 300px; z-index: -10;}
-.constrr li { display: inline-block;}
-.constrr li a{  color: #fff;}
-.constrr li:nth-child(1) a{
-    text-align: center;
-    width: 324px;height: 145px;
-    display: block;
-     background: url(../img/main/main/block03_icon01.png) no-repeat center;
+
+
+
+
+
+.main_block03_con{margin-top:106px;  position: relative; height: 400px;}
+.main_block03_con li a{font-size:18px; padding-top:121px; color: #fff;;}
+.main_block03_con li a span{display:inline;}
+.main_block03_con li:nth-child(1) a{background:url(../img/main/main/block03_icon01.png) no-repeat center top;}
+.main_block03_con li:nth-child(2) a{background:url(../img/main/main/block03_icon02.png) no-repeat center top;}
+.main_block03_con li:nth-child(3) a{background:url(../img/main/main/block03_icon03.png) no-repeat center top;}
+
+.main_block03_con li:nth-child(1) { position: absolute; right: 65%; top: 70%;}
+.main_block03_con li:nth-child(2) { position: absolute; right: 46%; top: 50%;}
+.main_block03_con li:nth-child(3) { position: absolute; right: 27.5%; top: 70%;}
+
+
+.main_block03_con li {
+    animation:seungkyu1 1s infinite alternate;
+
+
+}
+@keyframes seungkyu1
+
+{
+
+0%{transform:translateY(2px);}
+
+50%{transform:translateY(-3px);}
+
+100%{transform:translateY(2px);}
+
+}
+.header.bottom.on{
+    position: fixed; top: 0; z-index: 1000;
+    width: 100%; background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+
 }
 
-.constrr li:nth-child(2) a{
-    width: 324px;height: 145px;
-    display: block;
-    background: url(../img/main/main/block03_icon01.png) no-repeat center;
-  
+
+.conts3 { width: 1200px;margin: 0 auto;
+    height: 550px;
+    position: relative;
+    .conts3-nav{
+       
+    }
+    h2{
+        color: #3c3c3c;
+        font-size: 42px;
+        display: block;
+        text-align: center;
+        font-family: "Nunito Sans";
+        padding-top: 6%;
+        line-height: 1.2;
+        em{
+            font-weight: 900;
+            font-family: "Nunito Sans";
+        }
+    }
+    h4{
+        font-family: "나눔스퀘어";
+        color: #3c3c3c;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+
+
+        &::before{
+            content: '';
+            width:6vw;height: 1px;
+            background: #3c3c3c;
+            position: absolute; right: 47%;top: 220%;
+        }
+    }
 }
-.constrr li:nth-child(3) a{
-    width: 324px;height: 145px;
-    display: block;
-    background: url(../img/main/main/block03_icon01.png) no-repeat center;
-  
+.const3-img { height: 500px;}
+
+
+.conts3-nav {}
+.const3-img1{
+    background: url(../img/main/main/block05_img02.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    width: 38vw;
+    position: absolute; right: 45%; top: 50%;
+    z-index: 10;
+    li {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: "Nunito Sans";
+        text-align: center;
+        padding-top: 58vh;
+        letter-spacing: 3.2px;
+        a{ color: #fff}
+
+
+    &::after{
+        content: '';
+        width:8vw;height: 6px;
+        background: #fff;
+        position: absolute; right: 40%;top: 90%;
+    }
+}
+}
+.const3-img2{
+    background: url(../img/main/main/block05_img01.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    width: 38vw;
+    position: absolute; right: -3%; bottom: -77%;
+
+    li {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: "Nunito Sans";
+        text-align: center;
+        letter-spacing: 3.2px;
+        padding-top: 58vh;
+
+        a{ color: #fff}
+        
+        
+       
+    &::after{
+        content: '';
+        width:8vw;height: 6px;
+        background: #fff;
+        position: absolute; right: 40%;top: 90%;
+        transition: all 0.3s;
+
+
+    }
+}
 }
 
 

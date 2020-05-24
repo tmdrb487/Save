@@ -195,7 +195,7 @@
   <div class="company">
     <ul class="com img">
     <h2>고객과 가맹점주, 협력사의 상생의 가치를 실천합니다.</h2><BR>
-    <h4>해외에 로열티를 내지 않는 순수한 국내브랜드로 품질좋고 맛있는 정직한 커피를 제공합니다.</h4>
+    <h4>해외에 로열티를 내지 않는 순수한 국내브랜드로 품질좋고 맛있는 정직한 커피를 제공합니다.</h4>  
       <ul>
         <li><a href="#">가맹안내</a></li>
         <li><a href="#">브랜드소개</a></li>
@@ -208,13 +208,29 @@
       <div class="iimg"></div>
       <h2 class="consth2">EDIYA <em>CULTURE LAB</em></h2>
       <h4 class="consth4">커피를 더 특별하게 만드는 문화가 시작되는 공간</h4>
-      <div class="constbb"></div>
-      <ul class="constrr">
-        <li><a href="#"><span>이디야</span> 뮤직 페스타</a></li>
-        <li><a href="#"><span>컬쳐랩</span> 시설대관</a> </li>
-        <li><a href="#"><span>이디야</span> 컬쳐랩</a> </li>
+      <div class="constbb">
+      <ul class="main_block03_con">
+      	<li><a href="#"><span>이디야</span> 뮤직 페스타</a></li>
+        <li><a href='#'><span>컬쳐랩</span> 시설대관</a></li>
+        <li><a href="#"><span>이디야</span> 컬쳐랩</a></li>
       </ul>
     </div>
+  </div>
+  </div>
+
+
+  <div class="conts3">
+    <div class="conts3-nav">
+      <h2 class="consth3-h2">EDIYA <em>CULTURE LAB</em></h2>
+      <h4 class="consth3-h4">최고의 커피를 향한 끊임없는 노력, 이디야 커피연구소</h4>
+    </div>
+    <ul class="const3-img1">
+      <li><a href="#">COFFEE LAB</a></li>
+    </ul>
+    <ul class="const3-img2">
+      <li><a href="#">LAB MENU</a></li>
+    </ul>
+
   </div>
 
     <script src="assets/js/jquery.min.js"></script>
@@ -266,9 +282,22 @@ $(".sub-menu a").hover(function(){
   </script>
 
 <script>
-  (window).scroll(function(){
-    $(".header.bottom").addClass("on")
+
+
+
+$(".header.bottom").each(function(){
+  var header = $(this)
+  var headeroffset = header.offset().top;
+
+  $(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    if(wScroll > headeroffset){
+      header.addClass("on");
+    } else {
+      header.removeClass("on")
+    }
   })
+});
 </script>
 </body>
 </html>
