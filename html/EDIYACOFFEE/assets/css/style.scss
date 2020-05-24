@@ -404,24 +404,24 @@ position: relative;
     height: 450px;
 }
 .company {
- 
+    position: relative;
     text-align: right;
     h2{
-        color: #fff; font-size: 40px; font-family: "나눔스퀘어";
+        color: #fff; font-size: 2.5rem; font-family: "나눔스퀘어";
         font-weight: 100;
         width: 29vw;
-        height: 50px;
+        height: 3vh;
         position: absolute;right: 10%;top: 16%;
         display: block;
 
     }
     h4{
         color: #fff;
-        font-size: 17px;
+        font-size: 1rem;
         font-family: "나눔스퀘어";
         width: 22vw;
         display: block;
-        position: absolute;right: 13%;top: 53%;
+        position: absolute;right: 13%;top: 47%;
     }
     ul { position: relative;
     

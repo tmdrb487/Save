@@ -538,16 +538,17 @@ h3 {
 }
 
 .company {
+  position: relative;
   text-align: right;
 }
 
 .company h2 {
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "나눔스퀘어";
   font-weight: 100;
   width: 29vw;
-  height: 50px;
+  height: 3vh;
   position: absolute;
   right: 10%;
   top: 16%;
@@ -556,13 +557,13 @@ h3 {
 
 .company h4 {
   color: #fff;
-  font-size: 17px;
+  font-size: 1rem;
   font-family: "나눔스퀘어";
   width: 22vw;
   display: block;
   position: absolute;
   right: 13%;
-  top: 53%;
+  top: 47%;
 }
 
 .company ul {
