@@ -210,6 +210,34 @@
   transition: 0.3s;
 }
 
+#news h2 {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+#news .swiper-slide {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 2.0s ease;
+  transition: all 2.0s ease;
+}
+
+#news.show h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#news.show .swiper-slide {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 #intro h2 {
   font-size: 60px;
   line-height: 1.3;
