@@ -84,7 +84,8 @@
         </div>
 </header>
     <!-- //header -->
-    <section id="banner">
+    <main id="contents">
+    <section id="banner" class="show">
         <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -108,8 +109,9 @@
     <a href="#"><img src="assets/icons/img/icon-arrow.svg" alt="다음섹션가기"></a>
 </div>
     </section>
+  
     <!-- //banner -->
-    <section id="news">
+    <section id="news" class="show">
         <h2>내일을 위한 새롭고 활기찬 농심 소식</h2>
         <div class="notice">
             <div class="swiper-container">
@@ -221,7 +223,7 @@
     </section>
     <!-- //news -->
 
-    <section id="intro">
+    <section id="intro" class="show">
         <h2>한국을 대표하는 맛,<br>세계를 감동시킨 요리의 맛</h2>
         <div class="intro">
             <div class="intro-img">
@@ -250,7 +252,7 @@
     </section>
     <!-- //intro -->
 
-    <section id="story">
+    <section id="story" class="show">
         <h2>N.LIVE로 즐기는 농심 이야기</h2>
         <div class="story">
             <div class="swiper-container">
@@ -408,7 +410,7 @@
         </div>
         <a href="#" class="bland-btn">브랜드관</a>
     </section>
-
+</main>
     <!-- script -->
 
     <!-- footer -->
@@ -488,6 +490,35 @@
         //     <img src="assets/icons/img/icon-play.svg" alt="시작">
         // </a>        
         $(document).ready(function(){
+            $(window).scroll(function(){
+            const scrollTop = $(window).scrollTop() + $(window).height()/2;
+
+            $(window).scroll(function(){
+            $("#contents > section").each(function(){
+               if( scrollTop > $(this).offset().top ){
+               $(this).addClass("show");
+               } else {
+                $(this).removeClass("show");
+               }
+            });
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             $(".swiper-pagination").append("<a href='#' class='icon-pause'><img src='assets/icons/img/icon-pause.svg' alt='정지'></a>");
 
             $(".swiper-pagination a").click(function(e){
@@ -505,6 +536,8 @@
                 }
             })
         });
+    })
+ 
     </script>
 </body>
 </html>
