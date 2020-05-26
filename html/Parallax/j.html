@@ -39,19 +39,22 @@
     <script src="js/jquery-ui.min.js"></script>
     <script>
 
+
+
+
     //제이쿼리를 이용해서 글씨 색을 빨간색으로로 변경하세요
     // $(".box").css("color","red")
     //자바스크립트 이용해서 글씨 색을 글씨 색을 빨간색으로 변경하세요
-    // document.querySelector(".selector").style.color ="red"           //제이쿼리는 .box를하면 전체적으로 인식을하지만 자바는 한가지만 인식
+    // document.querySelector(".box").style.color ="red"           //제이쿼리는 .box를하면 전체적으로 인식을하지만 자바는 한가지만 인식
     // document.getElementById("selector").style.color = "red"
 
 
 
-    //     //다중 선택자 비교
-    //     // $("#list li").css("color","red");
+        // //다중 선택자 비교
+        // $("#list li").css("color","red");
 
-         //갯수파악
 
+    //     // 갯수파악
     //     let list = document.getElementById("list");    //ID 선택자
     //     let listLi = list.getElementsByTagName("li");  //자식 li를 선택
         
@@ -63,10 +66,11 @@
 
 
 
-        //다중 선택
+        // //다중 선택
         // $(".box").css("color","red")
+
         // document.querySelector(".box").style.color = "red";        // 다중선택 (x)
-        //document.querySelectorAll(".box").style.color = "red";      // 다중선택 (x)
+        // document.querySelectorAll(".box").style.color = "red";      // 다중선택 (x)
 
         // let box = document.querySelectorAll(".box");
 
@@ -75,53 +79,58 @@
         // }        
 
 
-        // document.querySelectorAll(".box").forEach(box => {box.style.color = "red";});             //최신버전
+        //  document.querySelectorAll(".box").forEach(box => {box.style.color = "red";});             //최신버전
 
 
 
 
         //태그 선택자
         // $("div").css("color","blue");
-        // document.getElementsByTagName("div").style.color ="blue"                           //getElementsByTagName 는 옛날버전이므로 잘 안먹힘
+
+        // document.getElementsByTagName("div").style.color ="blue"          //getElementsByTagName 는 옛날버전이므로 잘 안먹힘
         
 
 
 
-        // 선택
-        // const selector = $("#selector")
-        // const box = selector.find("box")
-        // selector.css("color","blue")
-
-        //한개만 선택
+        // //한개만 선택
         // const selector = document.getElementById("selector");
         // const box = selector.querySelector(".box");
         // box.style.color = "blue";
 
-        //전체다 블루
+
+        // //선택
+        // const selector = $("#selector")
+        // const box = selector.find("box")
+        // selector.css("color","blue")
+
+
+        // //전체다 블루
         // const boxAll = selector.querySelectorAll(".box")
         // ;boxAll.forEach(box => {box.style.color = "blue"})
 
 
-        // 숨기기 jQ
-        // $(".box").hide()
-        // 숨기기 java
-        // document.querySelectorAll(".box").forEach(box => {box.style.display = "none"})
+        //숨기기 jquery
+        // $(".box").hide();
+        // //숨기기 javascript
+        // document.querySelectorAll(".box").forEach(box => {box.style.display = "none"});
 
-        // // 보이기 jQ
-        // // $(".box").show()
-        // // 보이기 java
-        // document.querySelectorAll(".box").forEach(box => {box.style.display = "block"})
+        // // 보이기 jquery
+        //  $(".box").show();
+        // // 보이기 javascript
+        //  document.querySelectorAll(".box").forEach(box => {box.style.display = "block"});
 
 
         //클래스 추가하기
         //jq
 
-        // $(".box").addClass("add")
-        // document.querySelectorAll(".box").classlist.add(".add")
+        // $(".box").addClass("add");
+
+
+        // document.querySelectorAll(".box").classlist.add(".add");
 
 
 
-        // document.querySelectorAll(".box").forEach(box => {box.classList.remove("box")})
+        // document.querySelectorAll(".box").forEach(box => {box.classList.remove("box")});
 
 
 
@@ -177,11 +186,11 @@
 
         // java 클래스추가
 
-            document.querySelector(".btn1").addEventListener("click",function(){
-            let elem = document.getElementById("selector");
-            let doc = document.createElement("div");
-            elem.appendChild(doc)
-        });
+        //     document.querySelector(".btn1").addEventListener("click",function(){
+        //     let elem = document.getElementById("selector");
+        //     let doc = document.createElement("div");
+        //     elem.appendChild(doc)
+        // });
 
 
 
