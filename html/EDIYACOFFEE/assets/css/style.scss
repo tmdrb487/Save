@@ -282,6 +282,7 @@ font-family: "나눔스퀘어";}
 .img-left{
 height: 300px;
  position: relative;
+
 }
 
 .img-right{
@@ -309,7 +310,8 @@ position: relative;
 
 .img-right li:nth-child(1){
     width: 47vw;height: 628px;
-    position: absolute; right: -15.5%; top:-80%
+    position: absolute; right: -15.5%; top:-80%;
+
 }
 .img-right li:nth-child(2){
     width: 5vw;height: 90px;
