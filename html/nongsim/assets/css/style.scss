@@ -183,11 +183,24 @@
 
 // news animation
 #news h2 {opacity: 0; transform: translateY(100px); transition: all 0.6s ease;}
-#news .swiper-slide {opacity: 0; transform: translateY(300px); transition: all 1.3s ease; }
+#news .swiper-wrapper .swiper-slide {opacity: 0; transform: translateY(100px); transition: all 1.3s ease; }
+
+#news .notice-btn {display: inline-block;opacity: 0; }
+
 
 #news.show h2 {opacity: 1; transform: translateY(0);}
-#news.show .swiper-slide {opacity: 1; transform: translateY(0); }
+#news.show .swiper-wrapper .swiper-slide {opacity: 1; transform: translateY(0); }
+#news.show .notice-btn {opacity: 0;animation:bounceInLeft 0.6s 1.4s forwards}
 
+@keyframes bounceInLeft {
+    from,60%,75%,90%,
+    to{animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0;transform: translate3d(-3000px, 0, 0) scaleX(3);}
+    60% {opacity: 1;transform: translate3d(25px, 0, 0) scaleX(1);}
+    75% {transform: translate3d(-10px, 0, 0) scaleX(0.98);}
+    90% {transform: translate3d(5px, 0, 0) scaleX(0.995);}
+    to {opacity: 1;transform: translate3d(0, 0, 0);}
+  }
 
 // intro
 
@@ -254,11 +267,33 @@
 
 
 /* intro Animation */
-#intro h2 {opacity: 0; transform: translateY(100px); transition: all 0.4s ease;}
-.intro .intro-img {opacity: 0; transition: all 0.4s 0.2s ease;}
+#intro h2 {opacity: 0; transform: translateY(100px); transition: all 0.6s ease;}
+#intro .intro .intro-img {opacity: 0; transform: translateY(100px); transition: all 0.6s ease;}
+#intro .intro-intro > div:nth-child(1) {opacity: 0;transform:translateY(100px); transition: all 0.6s 0.2s ease }
+#intro .intro-intro > div:nth-child(2) {opacity: 0;transform:translateY(100px); transition: all 0.6s 0.4s ease }
+#intro .intro-intro > div:nth-child(3) {opacity: 0;transform:translateY(100px); transition: all 0.6s 0.6s ease }
+#intro .intro-btn {display: inline-block;opacity: 0; }
+
 
 #intro.show h2 {opacity: 1; transform: translateY(0);}
-#intro.show .intro .intro-img {opacity: 1;}
+#intro.show .intro .intro-img {opacity: 1; transform: translateY(0);}
+
+
+#intro.show .intro div:nth-child(1) {opacity: 1;transform:translateY(0px) }
+#intro.show .intro div:nth-child(2) {opacity: 1;transform:translateY(0px) }
+#intro.show .intro div:nth-child(3) {opacity: 1;transform:translateY(0px) }
+#intro.show .intro-btn {opacity: 1;animation:bounceInLeft 0.6s 1.4s forwards}
+
+@keyframes bounceInLeft {
+    from,60%,75%,90%,
+    to{animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0;transform: translate3d(-3000px, 0, 0) scaleX(3);}
+    60% {opacity: 1;transform: translate3d(25px, 0, 0) scaleX(1);}
+    75% {transform: translate3d(-10px, 0, 0) scaleX(0.98);}
+    90% {transform: translate3d(5px, 0, 0) scaleX(0.995);}
+    to {opacity: 1;transform: translate3d(0, 0, 0);}
+  }
+ 
 /* story */
 #story {
     background: #f6f6f6;
@@ -345,7 +380,7 @@
 #story.show .swiper-slide {opacity: 1; transform: translateY(0); }
 // #story.show .story .story-frame {opacity: 1; transform: translateY(0);  }
 
-#story.show .story-btn {animation:bounceInLeft 0.6s 1.4s forwards}
+#story.show .story-btn {opacity: 0;animation:bounceInLeft 0.6s 1.4s forwards}
 
 @keyframes bounceInLeft {
     from,60%,75%,90%,
@@ -448,7 +483,7 @@
 #world.show .world div:nth-child(3) {opacity: 1;transform:translateY(0px) }
 
 
-#world.show .world-btn {animation:bounceInLeft 0.6s 0.6s forwards}
+#world.show .world-btn {opacity: 1;animation:bounceInLeft 0.6s 1.4s forwards}
 
 @keyframes bounceInLeft {
     from,60%,75%,90%,
@@ -483,12 +518,11 @@
             font-weight: bold;
             padding: 220px 80px;
             
-            
         }
     }
-
+.nun { background: #f6f6f6;height: 620px;}
     .brand{
-
+        position: relative;
         display: flex;
         justify-content: space-between;
         width: 1200px;
@@ -512,7 +546,7 @@
 
                     .one{
                         width: 200px; height: 200px;
-                        background: #fff;
+                        background: #ffffff;
                         border-radius: 50%;
                     }
 
@@ -544,19 +578,49 @@
 }
 // brand animation
 #brand h2 {opacity: 0;transform: translateY(100px);; transition: all 0.6s ease ;}
-
-#brand .mbrand {opacity: 0;transform: translateY(100px);; transition: all 0.6s ease ; }
-
+// #brand .mbrand {opacity: 0;transform: translateY(100px);; transition: all 0.6s ease ; }
+#brand .mbrand {opacity: 0;transform: translateY(100px); transition: all 0.6s ease ;}
+// #brand .mbrand .bbrand { display: inline-block;opacity: 0;  }
+#brand .brand > div:nth-child(1) {opacity: 0;transform:translateY(100px); transition: all 0.8s 0.4s ease }
+#brand .brand > div:nth-child(2) {opacity: 0;transform:translateY(100px); transition: all 0.8s 0.6s ease }
+#brand .brand > div:nth-child(3) {opacity: 0;transform:translateY(100px); transition: all 0.8s 0.8s ease }
+#brand .brand > div:nth-child(4) {opacity: 0;transform:translateY(100px); transition: all 0.8s 1s ease }
+#brand .bland-btn { display: inline-block;opacity: 0; }
 
 #brand.show h2{opacity: 1;transform: translateY(0px) }
 #brand.show .mbrand{opacity: 1;transform: translateY(0px)}
 
+#brand.show .brand div:nth-child(1) {opacity: 1;transform:translateY(0px) }
+#brand.show .brand div:nth-child(2) {opacity: 1;transform:translateY(0px) }
+#brand.show .brand div:nth-child(3) {opacity: 1;transform:translateY(0px) }
+#brand.show .brand div:nth-child(4) {opacity: 1;transform:translateY(0px) }
+
+
+#brand.show .bland-btn {opacity: 1;animation:bounceInLeft 0.6s 1.4s forwards}
+
+@keyframes bounceInLeft {
+    from,60%,75%,90%,
+    to{animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0;transform: translate3d(-3000px, 0, 0) scaleX(3);}
+    60% {opacity: 1;transform: translate3d(25px, 0, 0) scaleX(1);}
+    75% {transform: translate3d(-10px, 0, 0) scaleX(0.98);}
+    90% {transform: translate3d(5px, 0, 0) scaleX(0.995);}
+    to {opacity: 1;transform: translate3d(0, 0, 0);}
+  }
+// #brand .mbrand .bbrand {animation:bounceInLeft 0.6s 1.4s forwards}
+
+// @keyframes bounceInLeft {
+//     from,60%,75%,90%,
+//     to{animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+//     0% {opacity: 0;transform: translate3d(-3000px, 0, 0) scaleX(3);}
+//     60% {opacity: 1;transform: translate3d(25px, 0, 0) scaleX(1);}
+//     75% {transform: translate3d(-10px, 0, 0) scaleX(0.98);}
+//     90% {transform: translate3d(5px, 0, 0) scaleX(0.995);}
+//     to {opacity: 1;transform: translate3d(0, 0, 0);}
+//   }
 
 
 
-
-
-.color { background: #fafafa; height: 700px; z-index: -1000;}
 
 #footer {
     background: #555;
