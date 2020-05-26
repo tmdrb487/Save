@@ -804,10 +804,10 @@ function out(){
             }
             function loop(){
             $(".circle11 > div")
-            .animate({left: cc},500,"easeOutQuint")
-            .animate({top: ff},500,"easeOutQuint")
-            .animate({left: "0%"},500,"easeOutQuint")
-            .animate({top: "0%"},500,"easeOutQuint",loop)
+            .animate({left: cc,opacity: 1,borderRadius:"30%"},500,"easeOutQuint")
+            .animate({top: ff,width: 200, opacity: 0.5},500,"easeOutQuint")
+            .animate({left: "0%",borderRadius:"0"},500,"easeOutQuint")
+            .animate({top: "0%",width: 60, opacity: 1},500,"easeOutQuint",loop)
 
             setTimeout(out, 10000);   
         }
