@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parallax04</title>
+    <title>parallax01</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <style>
 
@@ -238,7 +238,7 @@
     // 자바 최신버전 let pageYOffset = window.pageYOffset;
     // 자바 엣버전 var pageYOffset =  document.documentElement.scrollTop
 
-    //제이쿼 $(".scrollTop").text(scrollTop)                                             text랑 html이랑 차이점
+    //제이쿼 $(".scrollTop").text(scrollTop)                                            
     //제이쿼 $(".scrollTop").html(<span>scrollTop</span>)  html은 태그도 인식할수 있음
     // 자바 document.querySelector(".pageYOffset").textContent = pageYOffset // 초시ㅣㄴ방식
     // 자바 document.querySelector(".pageYOffset").innerHTML = pageYOffset        querySelector > 자바용으로 $() 제이쿼리
@@ -257,7 +257,6 @@
     
 
         // $(".s1OT").text( parseInt( $("#section1").offset().top));
-
                                                                 //getElementById 옛날 아이디 방식
         // document.querySelector(".s1OT").textContent = document.getElementById("section1").offsetTop;
         // document.querySelector(".s2OT").textContent = document.getElementById("section2").offsetTop;
@@ -269,10 +268,10 @@
         // document.querySelector(".s8OT").textContent = document.getElementById("section8").offsetTop;
         // document.querySelector(".s9OT").textContent = document.getElementById("section9").offsetTop;
 
+        for (let i = 1 ; i <= 9; i++){
+            document.querySelector(".s"+ i +"OT").textContent = document.getElementById("section" + i).offsetTop;
+            }
 
-        for (let i = 1; i <= 9; i++ ){
-            document.querySelector(".s"+ i +"OT").textContent = document.getElementById("section"+ i ).offsetTop;
-        }
 
         
             // if(pageYOffset > document.getElementById("section1").offsetTop){
@@ -329,15 +328,14 @@
             //     document.querySelector(".s9OT").style.color = "black";
             // }
 
-            for (let i = 1; i <= 9; i++ ){
-                if(pageYOffset > document.getElementById("section"+ i).offsetTop){
-            document.querySelector(".s"+ i +"OT").style.color = "red";
+            for(i = 1; i <= 9; i++){
+            if(pageYOffset > document.getElementById("section" + i ).offsetTop){
+            document.querySelector(".s"+i+"OT").style.color = "red";
             } else {
-                document.querySelector(".s"+ i +"OT").style.color = "black";
+                document.querySelector(".s"+i+"OT").style.color = "black";
             }
+
         }
-
-
             // //노가다 자바 버전
             // if(pageYOffset > document.getElementById("section1").offsetTop ){
             //     document.getElementById("section1").classList.add("show");
@@ -394,10 +392,8 @@
             // }
 
 
-
             //자바로 여러개를 선택할때는  querySelectorAll / this = elemnt
-            document.querySelectorAll(".content-item").forEach(elem => { 
-                console.log(elem.offsetTop);
+            document.querySelectorAll(".content-item").forEach(elem => {console.log(elem.offsetTop);
                 if( pageYOffset > elem.offsetTop){
                elem.classList.add("show")
                 } else {
