@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide01 - 페이드 효과 이미지 슬라이드</title>
+    <title>Slide03 - 위로 올라가는 이미지 슬라이드</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 
@@ -15,7 +15,7 @@
         img { width: 100%; vertical-align: top;}                 /* vertical-align: top 이미지의 여백을제거*/
         ul {padding: 10px 20px;}
 
-        
+
         body{ background: url(img/img11.jpg) no-repeat center center;
         background-size: cover;
         font-family: 'Abel','GmarketSansMedium';
@@ -26,7 +26,7 @@
             content: '';
             position: absolute; left: 0; top: 0;
             width: 100%; height: 100vh;
-            background: rgba(50,37,11,0.96);
+            background: rgba(50,37,11,0.90);
             z-index: -1;
         }
         .info {
@@ -50,44 +50,49 @@
             border-bottom: 1px dashed #fff;
         }
         /* slide */
-        .slide-wrap{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        .slider-wrap{
+         width: 1000px;height: 600px;overflow: hidden;
+         position: absolute; left: 50%; top: 50%;
+         transform: translate(-50%,-50%);
+         box-shadow: 4px 4px 20px rgba(0,0,0.5);
         }
 
-        .slideimg {
+        .sliderimg {
             position: relative;
-            width: 1000px; height: 600px;
-            box-shadow: 4px 4px 20px rgba(0,0,0.5);
+            width: 1000px; height: 3000px;
             overflow: hidden;
         }
 
 
-        .slideimg .slides {
-            position: relative; left: 0; top: 0; }
+        .sliderimg .slides {
+            width: 1000px; height:600px;}
     </style>
 
 </head>
 <body>
     <div class="info">
-        <h1>Image Slider01</h1>
-        <p>페이드 효과 이미지 슬라이드</p>
+        <h1>Image Slider03</h1>
+        <p>위로로 움직이기</p>
+        <ul>
+            <li>3초에 한 번씩 위로로 움직이기</li>
+        </ul>
     </div>
     <div class="info2">
         <ul>
-            <li class="active"><a href="slide01.html">Slider01</a></li>
+            <li><a href="slide01.html">Slider01</a></li>
             <li><a href="slide02.html">Slider02</a></li>
-            <li><a href="slide03.html">Slider03</a></li>
+            <li class="active"><a href="slide03.html">Slider03</a></li>
             <li><a href="slide04.html">Slider04</a></li>
             <li><a href="slide05.html">Slider05</a></li>
             <li><a href="slide06.html">Slider06</a></li>
             <li><a href="slide07.html">Slider07</a></li>
+
         </ul>
     </div>
-    <div class="slide-wrap">
-        <div class="slideimg">
+
+    <!-- slider -->
+    <div class="slider-wrap">
+        <div class="sliderimg">
             <div class="slides"><img src="img/img11.jpg" alt="이미지1"></div>
             <div class="slides"><img src="img/img22.jpg" alt="이미지1"></div>
             <div class="slides"><img src="img/img33.jpg" alt="이미지1"></div>
@@ -95,29 +100,39 @@
             <div class="slides"><img src="img/img55.jpg" alt="이미지1"></div>
         </div>
     </div>
+
+    <!-- script -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <script>
-        let slideWrap = $(".slide-wrap")
-        let slideImg = $(".slide-img")
-        let slides = $(".slides")
+
+        const sliderwrap = $(".slider-wrap")
+        const sliderImg = $(".sliderimg")
+        const slides = $(".slides")
+
+        let currentIndex = 0;     //현재 보이는 이미지
 
 
-        let currentIndex = 0;              //현재 첫 번째 보이는 이미지
-        let slideCount = slides.length;    //이미지 갯수
+        // 3초에 한번씩 함수를 실행
+        //left : -1000px
+        //left : -2000px
+        //left : -3000px
+        //left : -4000px
+        //left : 0px
 
-        //첫번째 이미지 선택해서 사라지게 slides.eq(0).hide()
-        //두번째 이미지 선택해 서 사라지게 slides.eq(1).hide()
-        //세번쨰 이미지 선택해서 사라지게 slides.eq(2).hide()
-
-        function showNext(){
-            let nextIndex = (currentIndex + 1) % slideCount                         //nextindex 현재이미지 
-            slides.eq(currentIndex).fadeOut(500);
-            slides.eq(nextIndex).fadeIn(500);
+        setInterval (function(){
 
 
-            currentIndex = nextIndex
-        }
-        setInterval(showNext, 3000)
+          //만약에 4이상이 되면 다시 = 0으로
+        //   if(currentIndex < 4){
+        //     currentIndex ++
+        //   } else {
+        //     currentIndex = 0;
+        //   }
+          //삼항 연산자로 if문을 줄여준다
+          currentIndex < 4 ? currentIndex++ : currentIndex = 0
+          sliderImg.animate({ top : currentIndex * (-600) + "px"},400)
+
+        },3000)
 
     </script>
 </body>
