@@ -15,7 +15,7 @@
     <div class="selector" id="selector">
         <div class="box">jQuery vs javaScript</div>
         <div class="box">jQuery vs javaScript</div>
-        <div class="box add">jQuery vs javaScript</div>
+        <div class="box">jQuery vs javaScript</div>
         <div class="box">jQuery vs javaScript</div>
         <div class="box">jQuery vs javaScript</div>
     </div>
@@ -97,7 +97,7 @@
 
 
 
-        // //한개만 선택
+        // // //한개만 선택
         // const selector = document.getElementById("selector");
         // const box = selector.querySelector(".box");
         // box.style.color = "blue";
@@ -136,18 +136,21 @@
 
 
         // document.querySelectorAll(".box").forEach(box => {box.classList.remove("box")});
+ 
 
-
-
-
-            // $(".box").toggleClass()
 
         // document.querySelector(".btn1").addEventListener("click",function(){ 
         // document.querySelectorAll(".box").forEach(box => {box.classList.toggle("add") })
         // })  
 
+
+
         // $(".btn1").on("click",function(){
+        //     $(".box").css("color","red")
+        // })
+
         // $(".btn1").click(function(){
+
         //     $(".box").css("color","red")
         // })
 
@@ -158,17 +161,18 @@
         // document.querySelectorAll(".box").forEach(box => {box.style.color = "red"})
         // })
 
+        
         // $(".box").on("mouseenter",function(){
         //     $(".box").css("color","red")
         // })
 
 
-        //마우스오버하면 색상을변경
+        // //마우스오버하면 색상을변경
         // document.querySelector(".selector").addEventListener("mouseenter",function(){
         //     document.querySelectorAll(".box").forEach(box => {box.style.color = "red"})
         // })
-        
-        //마우스오버를 때면 색상을변경
+         
+        // //마우스오버를 때면 색상을변경
         // document.querySelector(".selector").addEventListener("mouseleave",function(){
         //     document.querySelectorAll(".box").forEach(box => {box.style.color = "black"})
         // })
